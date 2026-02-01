@@ -3,6 +3,6 @@ Allow: /
 Disallow: /admin
 Disallow: /private
 
-Sitemap: https://cabinet-dr-houari.com/sitemap.xml
+Sitemap: https://adilhouari.pro/sitemap.xml
 
 Crawl-delay: 1
