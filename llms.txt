@@ -1,0 +1,35 @@
+# llms.txt — Cabinet Médical Dr Houari Adil
+# Information générale uniquement — ne remplace pas une consultation. Urgence vitale: contacter les services d'urgence.
+
+site_name: Cabinet Médical Dr Houari Adil
+language: fr
+country: MA
+service_areas: [Bouskoura, Ville Verte, Casablanca]
+specialties:
+  - "Médecine générale"
+  - "Médecine du sport"
+  - "Compétence en allergologie"
+appointments:
+  method: "telephone"
+  phones: ["+212 7 17 17 30 88", "+212 5 21 24 90 30"]
+contact:
+  email: "dradil.houari@gmail.com"
+address: "Andalous III, Jasmine 4, Appart N°10 Étage 2, Bouskoura, Casablanca, Maroc"
+hours:
+  mon-fri: "09:00-18:00"
+  sat: "09:00-13:00"
+  sun: "closed"
+home_visits:
+  available: true
+  areas: ["Bouskoura", "Ville Verte"]
+  note: "Selon disponibilité"
+
+pages:
+  - url: "/"
+    title: "Accueil"
+  - url: "/legal/mentions-legales.html"
+    title: "Mentions légales"
+  - url: "/legal/confidentialite.html"
+    title: "Confidentialité"
+  - url: "/404.html"
+    title: "404"

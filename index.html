@@ -1,326 +1,444 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-<title>Médecin généraliste à Bouskoura & Ville Verte | Visite à domicile – Dr Houari Adil</title>
-<meta name="description" content="Médecin généraliste à Bouskoura et Ville Verte (Casablanca). Médecine du sport, allergologie. Consultations et visites à domicile selon disponibilité. RDV par téléphone.">
-<link rel="canonical" href="https://adilhouari.pro/">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1FA3A3" />
 
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <title>Médecin généraliste à Bouskoura &amp; Ville Verte | Dr Houari Adil (Casablanca)</title>
+  <meta name="description" content="Cabinet Médical Dr Houari Adil à Bouskoura &amp; Ville Verte (Casablanca, Maroc) : médecine générale, médecine du sport, compétence en allergologie. Visites à domicile possibles selon disponibilité. RDV par téléphone." />
+  <link rel="canonical" href="https://adilhouari.pro/" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
 
-<meta property="og:title" content="Dr Houari Adil – Médecin à Bouskoura & Ville Verte | Visite à domicile">
-<meta property="og:description" content="Médecine générale, médecine du sport, allergologie. Consultations et visites à domicile à Bouskoura et Ville Verte (Casablanca).">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://adilhouari.pro/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Dr Houari Adil – Médecin à Bouskoura &amp; Ville Verte (Casablanca)" />
+  <meta property="og:description" content="Médecine générale, médecine du sport, compétence en allergologie. Consultations au cabinet et visites à domicile possibles selon disponibilité." />
+  <meta property="og:url" content="https://adilhouari.pro/" />
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Physician",
-  "name": "Dr Houari Adil",
-  "description": "Médecin généraliste à Bouskoura et Ville Verte (Casablanca). Médecine générale, médecine du sport, allergologie. Consultations et visites à domicile.",
-  "url": "https://adilhouari.pro/",
-  "telephone": "+212717173088",
-  "email": "dradil.houari@gmail.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Andalous III, Jasmine 4, Appart N°10 Étage 2",
-    "addressLocality": "Bouskoura",
-    "addressRegion": "Casablanca-Settat",
-    "addressCountry": "MA"
-  },
-  "areaServed": ["Bouskoura","Ville Verte","Casablanca"],
-  "medicalSpecialty": ["GeneralPractice","SportsMedicine","Allergology"],
-  "availableService": [
-    { "@type": "MedicalService", "name": "Consultation au cabinet" },
-    { "@type": "MedicalService", "name": "Visite à domicile" }
-  ],
-  "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" }
-  ]
-}
-</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {
-      "@type":"Question",
-      "name":"Faites-vous des visites à domicile à Bouskoura et Ville Verte ?",
-      "acceptedAnswer":{"@type":"Answer","text":"Oui, des visites à domicile sont possibles à Bouskoura et Ville Verte (Casablanca), selon disponibilité. Contactez le cabinet par téléphone pour organiser la visite."}
-    },
-    {
-      "@type":"Question",
-      "name":"Comment prendre rendez-vous ?",
-      "acceptedAnswer":{"@type":"Answer","text":"Vous pouvez prendre rendez-vous par téléphone ou via le formulaire de contact."}
-    },
-    {
-      "@type":"Question",
-      "name":"Quels services proposez-vous ?",
-      "acceptedAnswer":{"@type":"Answer","text":"Médecine générale, médecine du sport, allergologie, consultations au cabinet et visites à domicile."}
-    }
-  ]
-}
-</script>
+  <!-- JSON-LD: MedicalClinic + Physician -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://adilhouari.pro/#clinic",
+        "name": "Cabinet Médical Dr Houari Adil",
+        "url": "https://adilhouari.pro/",
+        "description": "Cabinet médical à Bouskoura & Ville Verte (Casablanca, Maroc) : médecine générale, médecine du sport, compétence en allergologie.",
+        "telephone": ["+212717173088", "+212521249030"],
+        "email": "dradil.houari@gmail.com",
+        "areaServed": ["Bouskoura", "Ville Verte", "Casablanca", "Maroc"],
+        "medicalSpecialty": [
+          "https://schema.org/GeneralPractice",
+          "https://schema.org/SportsMedicine",
+          "Allergy"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Andalous III, Jasmine 4, Appart N°10 Étage 2",
+          "addressLocality": "Bouskoura",
+          "addressRegion": "Casablanca-Settat",
+          "addressCountry": "MA"
+        },
+        "hasMap": "https://share.google/cah5KJrFw2B2TPfzH",
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" }
+        ],
+        "employee": {
+          "@type": "Physician",
+          "@id": "https://adilhouari.pro/#physician",
+          "name": "Dr Houari Adil",
+          "jobTitle": "Médecin",
+          "url": "https://adilhouari.pro/",
+          "telephone": ["+212717173088", "+212521249030"],
+          "email": "dradil.houari@gmail.com",
+          "medicalSpecialty": [
+            "https://schema.org/GeneralPractice",
+            "https://schema.org/SportsMedicine",
+            "Allergy"
+          ],
+          "availableService": [
+            { "@type": "MedicalService", "name": "Consultation au cabinet" },
+            { "@type": "MedicalService", "name": "Visite à domicile (selon disponibilité)" }
+          ],
+          "worksFor": { "@id": "https://adilhouari.pro/#clinic" }
+        }
+      }
+    ]
+  }
+  </script>
 
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- JSON-LD: FAQPage (4 questions) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "@id":"https://adilhouari.pro/#faq",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Faites-vous des visites à domicile à Bouskoura et Ville Verte ?",
+        "acceptedAnswer":{"@type":"Answer","text":"Oui, des visites à domicile sont possibles à Bouskoura et Ville Verte selon disponibilité. Veuillez appeler pour vérifier les créneaux."}
+      },
+      {
+        "@type":"Question",
+        "name":"Comment prendre rendez-vous ?",
+        "acceptedAnswer":{"@type":"Answer","text":"La prise de rendez-vous se fait par téléphone : +212 7 17 17 30 88 ou +212 5 21 24 90 30. Vous pouvez aussi utiliser le formulaire qui ouvre votre email (mailto)."}
+      },
+      {
+        "@type":"Question",
+        "name":"Quels services proposez-vous ?",
+        "acceptedAnswer":{"@type":"Answer","text":"Médecine générale, médecine du sport et compétence en allergologie. Consultations au cabinet et visites à domicile possibles selon disponibilité."}
+      },
+      {
+        "@type":"Question",
+        "name":"Quels sont les horaires du cabinet ?",
+        "acceptedAnswer":{"@type":"Answer","text":"Lun–Ven 09:00–18:00, Samedi 09:00–13:00, Dimanche fermé."}
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <a href="#" class="logo">
-                <div class="logo-icon">Dr</div>
-                <div class="logo-text">
-                    <span class="site-name">Dr Houari Adil</span>
-                    <p>Cabinet Médical</p>
-                </div>
-            </a>
-            <nav>
-                <a href="#accueil">Accueil</a>
-                <a href="#services">Services</a>
-                <a href="#about">À Propos</a>
-                <a href="#contact">Contact</a>
-                <a href="tel:+212 7 17 17 30 88" class="cta-button">
-                    📞 +212 7 17 17 30 88
-                </a>
-            </nav>
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Accueil - Cabinet Médical Dr Houari Adil">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" role="img" aria-label="">
+            <path fill="currentColor" d="M20 13.5a2.5 2.5 0 0 1-2.5 2.5h-2.2a5.3 5.3 0 0 1-4.8 3h-.9a3.6 3.6 0 0 1-3.6-3.6v-1a3.4 3.4 0 0 1 3.4-3.4h1.1v2H9.4a1.4 1.4 0 0 0-1.4 1.4v1a1.6 1.6 0 0 0 1.6 1.6h.9a3.3 3.3 0 0 0 3.1-2.1A4 4 0 0 0 12 11V6.5A2.5 2.5 0 0 1 14.5 4H17a3 3 0 0 1 3 3v6.5Zm-2 0V7a1 1 0 0 0-1-1h-2.5A.5.5 0 0 0 14 6.5V11a2 2 0 0 0 2 2h2Z"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>Dr Houari Adil</strong>
+          <span>Cabinet Médical • Bouskoura &amp; Ville Verte</span>
+        </span>
+      </a>
+
+      <button class="navbtn" type="button" aria-controls="nav" aria-expanded="false">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span aria-hidden="true" class="navbtn__bars"></span>
+      </button>
+
+      <nav id="nav" class="nav" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#infos">Infos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn--primary" href="tel:+212717173088">Prendre rendez-vous</a>
+        <a class="btn btn--outline btn--wa" href="https://wa.me/212717173088?text=Bonjour%2C%20je%20souhaite%20prendre%20un%20rendez-vous%20au%20Cabinet%20M%C3%A9dical%20Dr%20Houari%20Adil.%20Merci%20de%20me%20proposer%20un%20cr%C3%A9neau." target="_blank" rel="noopener" aria-label="Ouvrir WhatsApp pour contacter le cabinet">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="badge">Médecin à Bouskoura &amp; Ville Verte • Casablanca, Maroc</p>
+          <h1>Votre Santé, Notre Priorité</h1>
+          <p class="lead">Cabinet médical à l'écoute offrant médecine générale, médecine du sport et allergologie. Nous assurons le suivi médical de toute la famille, du nourrisson à la personne âgée, avec un accueil chaleureux et professionnel. Visites à domicile possibles à Bouskoura et Ville Verte selon disponibilité.</p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="tel:+212717173088">📞 Prendre rendez-vous (téléphone)</a>
+            <a class="btn btn--ghost" href="#contact">✉️ Envoyer un message</a>
+          </div>
+
+          <ul class="trust" aria-label="Informations clés">
+            <li>
+              <span class="trust__k">Téléphones</span>
+              <span class="trust__v"><a href="tel:+212717173088">+212 7 17 17 30 88</a> • <a href="tel:+212521249030">+212 5 21 24 90 30</a></span>
+            </li>
+            <li>
+              <span class="trust__k">Horaires</span>
+              <span class="trust__v">Lun–Ven 09:00–18:00 • Sam 09:00–13:00 • Dim fermé</span>
+            </li>
+            <li>
+              <span class="trust__k">Adresse</span>
+              <span class="trust__v">Andalous III, Jasmine 4, Appart N°10 Étage 2, Bouskoura</span>
+            </li>
+          </ul>
         </div>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="hero" id="accueil">
-            <div class="container" style="grid-column: 1;">
-                <div class="hero-content">
-                    <h2>Bienvenue au Cabinet</h2>
-                    <h1>Votre Santé, Notre Priorité</h1>
-                    <p>Cabinet médical à l'écoute offrant médecine générale, médecine du sport et allergologie. Nous assurons le suivi médical de toute la famille, du nourrisson à la personne âgée, avec un accueil chaleureux et professionnel.</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn-primary">Prendre un Rendez-vous →</a>
-                        <a href="#services" class="btn-secondary">En Savoir Plus</a>
-                    </div>
-                </div>
+        <aside class="hero__card" aria-label="Carte du cabinet">
+          <div class="card card--elev">
+            <div class="card__top">
+              <h2>Cabinet Médical</h2>
+              <p>Dr Houari Adil</p>
             </div>
-            <div class="hero-image" style="grid-column: 2;">
-                <img src="images/hero-medical.png" alt="Cabinet Médical Dr Houari Adil">
+
+            <img class="card__photo" src="assets/cabinet.jpg" width="738" height="559" loading="lazy" decoding="async" alt="Photo du cabinet médical Dr Houari Adil à Bouskoura" />
+
+            <div class="card__row">
+              <div class="icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="label">Adresse</div>
+                <div class="value">Andalous III, Jasmine 4, Appart N°10 Étage 2, Bouskoura, Casablanca</div>
+                <a class="link" target="_blank" rel="noopener" href="https://share.google/cah5KJrFw2B2TPfzH">Ouvrir dans Google Maps</a>
+              </div>
             </div>
-        </section>
 
-        <!-- Services Section -->
-        <section class="services" id="services">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Nos Services</h2>
-                    <p>Découvrez les services complets offerts par notre cabinet médical</p>
-                </div>
-                <div class="services-grid">
-                    <div class="service-card fade-in">
-                        <div class="service-icon">👨‍⚕️</div>
-                        <h3>Médecine Générale</h3>
-                        <p>Suivi médical complet pour toute la famille, du nourrisson à la personne âgée. Consultations pour tous vos besoins de santé générale.</p>
-                    </div>
-                    <div class="service-card fade-in">
-                        <div class="service-icon">⚽</div>
-                        <h3>Médecine du Sport</h3>
-                        <p>Prise en charge des sportifs, de la prévention aux blessures. Bilans de santé personnalisés et conseils pour optimiser vos performances.</p>
-                    </div>
-                    <div class="service-card fade-in">
-                        <div class="service-icon">🤧</div>
-                        <h3>Allergologie</h3>
-                        <p>Diagnostic et traitement des maladies allergiques. Tests d'allergie et plans de traitement adaptés à votre situation.</p>
-                    </div>
-                    <div class="service-card fade-in">
-                        <div class="service-icon">🏠</div>
-                        <h3>Visites à Domicile</h3>
-                        <p>Service de visite à domicile disponible sur Ville Verte et Bouskoura pour votre commodité et confort.</p>
-                    </div>
-                </div>
+            <div class="card__row">
+              <div class="icon" aria-hidden="true">📞</div>
+              <div>
+                <div class="label">Rendez-vous</div>
+                <div class="value"><a href="tel:+212717173088">+212 7 17 17 30 88</a><br /><a href="tel:+212521249030">+212 5 21 24 90 30</a></div>
+              </div>
             </div>
-        </section>
 
-        <!-- About Section -->
-        <section class="about" id="about">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>À Propos du Cabinet</h2>
-                        <p>Le Cabinet Médical Dr Houari Adil est un établissement de santé moderne et accueillant, dédié à offrir des soins médicaux de qualité supérieure.</p>
-                        <p>Professionnel expérimenté et bienveillant, engagé à fournir les meilleurs services médicaux aux patients.</p>
-                        <div class="about-values">
-                            <div class="value-item">
-                                <div class="value-icon">✓</div>
-                                <div class="value-text">
-                                    <h4>Expertise</h4>
-                                    <p>Professionnels qualifiés et expérimentés</p>
-                                </div>
-                            </div>
-                            <div class="value-item">
-                                <div class="value-icon">✓</div>
-                                <div class="value-text">
-                                    <h4>Accueil Chaleureux</h4>
-                                    <p>Service attentif et professionnel</p>
-                                </div>
-                            </div>
-                            <div class="value-item">
-                                <div class="value-icon">✓</div>
-                                <div class="value-text">
-                                    <h4>Équipements Modernes</h4>                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-box">
-                        <h3>Informations Pratiques</h3>
-                        <div class="contact-item">
-                            <h4>Localisation</h4>
-                            <p>Bouskoura & Ville Verte<br>Casablanca, Maroc</p>
-                        </div>
-                        <div class="contact-item">
-                            <h4>Horaires</h4>
-                            <p>Lun-Ven: 09:00 - 18:00<br>Samedi: 09:00 - 13:00<br>Dimanche: Fermé</p>
-                        </div>
-                        <div class="contact-item">
-                            <h4>Contact</h4>
-                            <p>Téléphone: <a href="tel:+212717173088">+212 7 17 17 30 88 / +212 5 21 24 90 30</a><br>
-                            Email: <a href="dradilhouari@gmail.com">dradilhouari@gmail.com</a></p>
-                        </div>
-                    </div>
-                </div>
+            <div class="note" role="note">
+              Visites à domicile possibles à <strong>Bouskoura</strong> et <strong>Ville Verte</strong> selon disponibilité.
             </div>
-        </section>
-<!-- FAQ Section -->
-<section class="faq" id="faq">
-  <div class="container">
-    <div class="section-title">
-      <h2>Questions fréquentes</h2>
-      <p>Informations utiles sur les consultations et la visite à domicile</p>
-    </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+<section class="section" id="services" aria-label="Services">
+      <div class="container">
+        <header class="section__head">
+          <h2>Services</h2>
+          <p class="muted">
+            Les informations présentées sont générales et ne remplacent pas une consultation médicale.
+            Aucune promesse de résultat n’est faite.
+          </p>
+        </header>
 
-    <div class="faq-item">
-      <h3>Faites-vous des visites à domicile à Bouskoura et Ville Verte ?</h3>
-      <p>Oui, des visites à domicile sont possibles à Bouskoura et Ville Verte (Casablanca), selon disponibilité. Appelez pour organiser la visite.</p>
-    </div>
+        <div class="grid grid--3" role="list">
+          <article class="card service" role="listitem">
+            <div class="service__icon" aria-hidden="true">👨‍⚕️</div>
+            <h3>Médecine Générale</h3>
+            <p>Suivi médical complet pour toute la famille, du nourrisson à la personne âgée. Consultations pour tous vos besoins de santé générale.</p>
+          </article>
 
-    <div class="faq-item">
-      <h3>Comment prendre rendez-vous ?</h3>
-      <p>Par téléphone.</p>
-    </div>
+          <article class="card service" role="listitem">
+            <div class="service__icon" aria-hidden="true">⚽</div>
+            <h3>Médecine du Sport</h3>
+            <p>Prise en charge des sportifs, de la prévention aux blessures. Bilans et conseils pour accompagner votre reprise et vos objectifs.</p>
+          </article>
 
-    <div class="faq-item">
-      <h3>Quels services proposez-vous ?</h3>
-      <p>Médecine générale, médecine du sport, allergologie, consultations au cabinet et visites à domicile.</p>
-    </div>
+          <article class="card service" role="listitem">
+            <div class="service__icon" aria-hidden="true">🤧</div>
+            <h3>Allergologie</h3>
+            <p>Évaluation et suivi des manifestations allergiques. Conseils pratiques et orientation si nécessaire.</p>
+          </article>
 
-    <div class="faq-item">
-      <h3>Quels sont les horaires du cabinet ?</h3>
-      <p>Lun–Ven : 09:00–18:00. Samedi : 09:00–13:00. Dimanche : fermé.</p>
-    </div>
-  </div>
-</section>
+          <article class="card service" role="listitem">
+            <div class="service__icon" aria-hidden="true">🏠</div>
+            <h3>Visites à Domicile</h3>
+            <p>Possibles à Bouskoura et Ville Verte selon disponibilité. Appelez pour vérifier les créneaux.</p>
+          </article>
+</div>
 
-        <!-- Contact Section -->
-        <section class="contact" id="contact">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Prenez Rendez-vous</h2>
-                    <p>Contactez-nous pour fixer un rendez-vous ou pour toute question</p>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Informations de Contact</h3>
-                        <div class="contact-item">
-                            <h4>📞 Téléphone</h4>
-                            <p><a href="tel:+212717173088">+212 7 17 17 30 88 / +212 5 21 24 90 30</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <h4>📧 Email</h4>
-                            <p><a href="mailto:dradil.houari@gmail.com">dradil.houari@gmail.com</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <h4>📍 Adresse</h4>
-                            <p>Andalous III, Jasmine 4, Appart N°10 Étage 2, Bouskoura<br>Casablanca, Maroc</p>
-                        </div>
-                        <div class="contact-item">
-                            <h4>🕐 Horaires</h4>
-                            <p>Lun-Ven: 09:00 - 18:00<br>Samedi: 09:00 - 13:00<br>Dimanche: Fermé</p>
-                        </div>
-                    </div>
-                    <form class="contact-form" onsubmit="handleSubmit(event)">
-                        <div class="form-group">
-                            <label for="name">Nom Complet</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Téléphone</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">Envoyer le Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Cabinet Médical</h4>
-                    <p>Dr Houari Adil - Médecine générale, sport et allergologie à Bouskoura et Ville Verte.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Médecine Générale</a></li>
-                        <li><a href="#services">Médecine du Sport</a></li>
-                        <li><a href="#services">Allergologie</a></li>
-                        <li><a href="#services">Visites à Domicile</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="tel:+212 7 17 17 30 88 / +212 5 21 24 90 30">+212 7 17 17 30 88 / +212 5 21 24 90 30</a></li>
-                        <li><a href="mailto:dradil.houari@gmail.com">dradil.houari@gmail.com</a></li>
-                        <li>Bouskoura & Ville Verte</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Cabinet Médical Dr Houari Adil. Tous droits réservés.</p>
-                <div class="footer-links">
-                    <a href="#mentions">Mentions Légales</a>
-                    <a href="#confidentialite">Politique de Confidentialité</a>
-                </div>
-            </div>
+        <div class="callout">
+          <strong>Visites à domicile :</strong> possibles à Bouskoura &amp; Ville Verte selon disponibilité.
+          <a class="link" href="tel:+212717173088">Appeler pour vérifier un créneau</a>.
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- Scroll to Top Button -->
-    <div class="scroll-to-top" id="scrollToTop">↑</div>
+    <section class="section section--alt" id="infos" aria-label="Infos pratiques">
+      <div class="container">
+        <header class="section__head">
+          <h2>Infos pratiques</h2>
+          <p class="muted">Coordonnées, horaires et zones desservies.</p>
+        </header>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+        <div class="grid grid--2">
+          <div class="card card--elev">
+            <h3>Coordonnées</h3>
+            <p class="muted">
+              <strong>Cabinet Médical Dr Houari Adil</strong><br />
+              Andalous III, Jasmine 4, Appart N°10 Étage 2,<br />
+              Bouskoura, Casablanca, Maroc
+            </p>
+
+            <div class="map card">
+              <iframe title="Carte — Cabinet Médical Dr Houari Adil" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Andalous%20III%2C%20Jasmine%204%2C%20Appart%20N%C2%B010%20%C3%89tage%202%2C%20Bouskoura%2C%20Casablanca%2C%20Maroc&output=embed" width="100%" height="260" style="border:0;" allowfullscreen></iframe>
+            </div>
+
+            <div class="split">
+              <a class="btn btn--primary" href="tel:+212717173088">Appeler</a>
+              <a class="btn btn--ghost" href="#contact">Message</a>
+              <a class="btn btn--outline" target="_blank" rel="noopener"
+                 href="https://share.google/cah5KJrFw2B2TPfzH">Itinéraire</a>
+            </div>
+
+            <hr class="sep" />
+
+            <div class="muted">
+              <div><strong>Email :</strong> <a href="mailto:dradil.houari@gmail.com">dradil.houari@gmail.com</a></div>
+              <div><strong>Tél :</strong> <a href="tel:+212717173088">+212 7 17 17 30 88</a> / <a href="tel:+212521249030">+212 5 21 24 90 30</a></div>
+              <div><strong>Zones :</strong> Bouskoura, Ville Verte, Casablanca</div>
+            </div>
+          </div>
+
+          <div class="card card--elev">
+            <h3>Horaires</h3>
+            <dl class="hours" aria-label="Horaires d'ouverture">
+              <div><dt>Lun–Ven</dt><dd>09:00–18:00</dd></div>
+              <div><dt>Samedi</dt><dd>09:00–13:00</dd></div>
+              <div><dt>Dimanche</dt><dd>Fermé</dd></div>
+            </dl>
+
+            <div class="warn" role="note" aria-label="Avertissement">
+              <strong>Avertissement :</strong> information générale uniquement. En cas d’urgence vitale, contactez les services d’urgence.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-label="FAQ">
+      <div class="container">
+        <header class="section__head">
+          <h2>FAQ</h2>
+          <p class="muted">Questions fréquentes sur les rendez-vous et les services.</p>
+        </header>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Faites-vous des visites à domicile à Bouskoura et Ville Verte ?</summary>
+            <div class="faq__body">
+              Oui, des visites à domicile sont possibles à Bouskoura et Ville Verte selon disponibilité. Appelez pour vérifier les créneaux.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Comment prendre rendez-vous ?</summary>
+            <div class="faq__body">
+              Par téléphone : <a href="tel:+212717173088">+212 7 17 17 30 88</a> ou <a href="tel:+212521249030">+212 5 21 24 90 30</a>.
+              Vous pouvez aussi utiliser le formulaire ci-dessous (ouvre votre email via mailto).
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Quels services proposez-vous ?</summary>
+            <div class="faq__body">
+              Médecine générale, médecine du sport et compétence en allergologie. Consultations au cabinet et visites à domicile possibles selon disponibilité.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Quels sont les horaires du cabinet ?</summary>
+            <div class="faq__body">
+              Lun–Ven 09:00–18:00, Samedi 09:00–13:00, Dimanche fermé.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact" aria-label="Contact">
+      <div class="container">
+        <header class="section__head">
+          <h2>Contact</h2>
+          <p class="muted">Sans backend : le formulaire ouvre votre messagerie avec un sujet et un message pré-remplis.</p>
+        </header>
+
+        <div class="grid grid--2">
+          <div class="card card--elev">
+            <h3>Rendez-vous par téléphone</h3>
+            <p class="muted">Le plus rapide : appelez le cabinet.</p>
+            <div class="split">
+              <a class="btn btn--primary" href="tel:+212717173088">+212 7 17 17 30 88</a>
+              <a class="btn btn--outline" href="tel:+212521249030">+212 5 21 24 90 30</a>
+            </div>
+            <p class="tiny muted" style="margin-top:12px;">Visites à domicile possibles à Bouskoura &amp; Ville Verte selon disponibilité.</p>
+          </div>
+
+          <div class="card card--elev">
+            <h3>Envoyer un message</h3>
+
+            <form id="contactForm" class="form" novalidate>
+              <div class="field">
+                <label for="name">Nom</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+                <p class="hint">Veuillez renseigner votre nom.</p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Téléphone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+                <p class="hint">Veuillez renseigner un numéro de téléphone.</p>
+              </div>
+
+              <div class="field">
+                <label for="reason">Motif</label>
+                <select id="reason" name="reason" required>
+                  <option value="" selected>Choisir…</option>
+                  <option value="Rendez-vous">Demande de rendez-vous</option>
+                  <option value="Information">Information</option>
+                  <option value="Visite à domicile">Visite à domicile</option>
+                  <option value="Autre">Autre</option>
+                </select>
+                <p class="hint">Veuillez sélectionner un motif.</p>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <p class="hint">Veuillez écrire votre message.</p>
+              </div>
+
+              <button class="btn btn--primary" type="submit">Ouvrir l’email</button>
+              <p class="tiny muted" style="margin:10px 0 0;">
+                Email : <a href="mailto:dradil.houari@gmail.com">dradil.houari@gmail.com</a>
+              </p>
+            </form>
+
+            <p class="tiny muted" style="margin-top:14px;">
+              <a href="legal/mentions-legales.html">Mentions légales</a> •
+              <a href="legal/confidentialite.html">Confidentialité</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div>
+        <strong>Cabinet Médical Dr Houari Adil</strong>
+        <p class="muted tiny">Bouskoura &amp; Ville Verte • Casablanca, Maroc</p>
+      </div>
+
+      <div class="tiny">
+        <div><strong>Contact</strong></div>
+        <div><a href="tel:+212717173088">+212 7 17 17 30 88</a></div>
+        <div><a href="tel:+212521249030">+212 5 21 24 90 30</a></div>
+        <div><a href="mailto:dradil.houari@gmail.com">dradil.houari@gmail.com</a></div>
+      </div>
+
+      <div class="tiny">
+        <div><strong>Liens</strong></div>
+        <div><a href="#services">Services</a></div>
+        <div><a href="#infos">Infos</a></div>
+        <div><a href="#faq">FAQ</a></div>
+        <div><a href="#contact">Contact</a></div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p class="tiny muted">© <span id="year"></span> Cabinet Médical Dr Houari Adil. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+  <a class="fab-wa" href="https://wa.me/212717173088?text=Bonjour%2C%20je%20souhaite%20prendre%20un%20rendez-vous%20au%20Cabinet%20M%C3%A9dical%20Dr%20Houari%20Adil.%20Merci%20de%20me%20proposer%20un%20cr%C3%A9neau." target="_blank" rel="noopener" aria-label="Contacter le cabinet sur WhatsApp">
+    <span aria-hidden="true">💬</span><span class="sr-only">WhatsApp</span>
+  </a>
+
 </body>
 </html>
