@@ -575,3 +575,22 @@ textarea{ resize: vertical; }
     object-fit: cover;
   }
 }
+
+/* QR block */
+.qr{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(12,27,27,.10);
+}
+.qr img{
+  width: 120px;
+  height: 120px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(12,27,27,.10);
+  padding: 8px;
+}
+.qr__text{ display:grid; gap: 4px; }
