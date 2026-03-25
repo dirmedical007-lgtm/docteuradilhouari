@@ -52,9 +52,21 @@
   if (form){
     const submitBtn = document.getElementById('submitBtn');
     const formResult = document.getElementById('formResult');
+    const formLoadTime = Date.now();
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
+
+      // Honeypot : un robot aura rempli ce champ caché
+      const hp = form.querySelector('[name="hp_website"]');
+      if (hp && hp.value) return;
+
+      // Délai minimum : un robot soumet instantanément
+      if (Date.now() - formLoadTime < 3000) {
+        formResult.className = 'form-result form-result--err';
+        formResult.textContent = 'Veuillez prendre le temps de remplir le formulaire.';
+        return;
+      }
 
       const name = document.getElementById('name');
       const phone = document.getElementById('phone');

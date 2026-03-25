@@ -430,6 +430,13 @@ h1{
   gap: 12px;
   margin-top: 10px;
 }
+/* Honeypot : hors écran, invisible pour les humains */
+.hp-field{
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
 .field{ display:grid; gap: 6px; }
 label{ font-weight: 900; }
 input, select, textarea{
