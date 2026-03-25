@@ -386,6 +386,11 @@
               <input type="hidden" name="access_key" value="918ebe93-59d9-4e98-8cf9-ec641cb0d531" />
               <input type="hidden" name="subject" value="Message depuis adilhouari.pro" />
               <input type="hidden" name="from_name" value="Cabinet Médical Dr Houari Adil" />
+              <!-- Honeypot anti-spam : invisible pour les humains, rempli par les robots -->
+              <div class="hp-field" aria-hidden="true">
+                <label for="hp_website">Site web</label>
+                <input id="hp_website" name="hp_website" type="text" tabindex="-1" autocomplete="off" />
+              </div>
 
               <div class="field">
                 <label for="name">Nom</label>
