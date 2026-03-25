@@ -76,6 +76,14 @@
 
       if (bad) return;
 
+      // Vérifier hCaptcha
+      const hcaptchaResponse = form.querySelector('[name="h-captcha-response"]');
+      if (!hcaptchaResponse || !hcaptchaResponse.value) {
+        formResult.className = 'form-result form-result--err';
+        formResult.textContent = 'Veuillez compléter le captcha.';
+        return;
+      }
+
       submitBtn.disabled = true;
       submitBtn.textContent = 'Envoi en cours\u2026';
       formResult.className = 'form-result';
@@ -92,6 +100,7 @@
           formResult.className = 'form-result form-result--ok';
           formResult.textContent = 'Message envoy\u00e9 ! Nous vous r\u00e9pondrons dans les plus brefs d\u00e9lais.';
           form.reset();
+          if (window.hcaptcha) hcaptcha.reset();
         } else {
           throw new Error(json.message || 'Erreur');
         }
