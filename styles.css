@@ -452,6 +452,30 @@ textarea{ resize: vertical; }
   border-color: rgba(176,0,32,.75);
 }
 
+.form-result{
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: .95rem;
+}
+.form-result:not(:empty){
+  padding: 12px 14px;
+}
+.form-result--ok{
+  background: rgba(31,163,163,.10);
+  border: 1px solid rgba(31,163,163,.25);
+  color: var(--teal-3);
+}
+.form-result--err{
+  background: rgba(176,0,32,.06);
+  border: 1px solid rgba(176,0,32,.20);
+  color: #b00020;
+}
+.btn:disabled{
+  opacity: .65;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
 .footer{
   padding: 28px 0 20px;
 }

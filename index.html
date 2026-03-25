@@ -91,7 +91,7 @@
       {
         "@type":"Question",
         "name":"Comment prendre rendez-vous ?",
-        "acceptedAnswer":{"@type":"Answer","text":"La prise de rendez-vous se fait par téléphone : +212 7 17 17 30 88 ou +212 5 21 24 90 30. Vous pouvez aussi utiliser le formulaire qui ouvre votre email (mailto)."}
+        "acceptedAnswer":{"@type":"Answer","text":"La prise de rendez-vous se fait par téléphone : +212 7 17 17 30 88 ou +212 5 21 24 90 30. Vous pouvez aussi utiliser le formulaire de contact sur le site."}
       },
       {
         "@type":"Question",
@@ -340,7 +340,7 @@
             <summary>Comment prendre rendez-vous ?</summary>
             <div class="faq__body">
               Par téléphone : <a href="tel:+212717173088">+212 7 17 17 30 88</a> ou <a href="tel:+212521249030">+212 5 21 24 90 30</a>.
-              Vous pouvez aussi utiliser le formulaire ci-dessous (ouvre votre email via mailto).
+              Vous pouvez aussi utiliser le formulaire de contact ci-dessous.
             </div>
           </details>
 
@@ -383,6 +383,10 @@
             <h3>Envoyer un message</h3>
 
             <form id="contactForm" class="form" novalidate>
+              <input type="hidden" name="access_key" value="VOTRE_CLE_WEB3FORMS" />
+              <input type="hidden" name="subject" value="Message depuis adilhouari.pro" />
+              <input type="hidden" name="from_name" value="Cabinet Médical Dr Houari Adil" />
+
               <div class="field">
                 <label for="name">Nom</label>
                 <input id="name" name="name" type="text" autocomplete="name" required />
@@ -413,8 +417,9 @@
                 <p class="hint">Veuillez écrire votre message.</p>
               </div>
 
-              <button class="btn btn--primary" type="submit">Ouvrir l’email</button>
-              <p class="tiny muted" style="margin:10px 0 0;">
+              <button class="btn btn--primary" type="submit" id="submitBtn">Envoyer le message</button>
+              <div id="formResult" class="form-result" role="alert" aria-live="polite"></div>
+              <p class="tiny muted" style="margin:8px 0 0;">
                 Email : <a href="mailto:dradil.houari@gmail.com">dradil.houari@gmail.com</a>
               </p>
             </form>
