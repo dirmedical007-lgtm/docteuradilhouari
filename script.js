@@ -38,9 +38,8 @@
     });
   }
 
-  // mailto form
+  // contact form — Web3Forms (https://web3forms.com)
   const form = document.getElementById('contactForm');
-  const EMAIL = 'dradil.houari@gmail.com';
 
   function clean(v){ return String(v||'').trim(); }
   function wrap(el){ return el ? el.closest('.field') : null; }
@@ -50,31 +49,11 @@
     w.classList.toggle('invalid', !!bad);
   }
 
-  function buildMailto(data){
-    const subject = `Contact – Cabinet Médical Dr Houari Adil – ${data.reason || 'Demande'}`;
-    const body = [
-      'Bonjour Dr Houari Adil,',
-      '',
-      'Je vous contacte via le site du cabinet.',
-      '',
-      `Nom : ${data.name}`,
-      `Téléphone : ${data.phone}`,
-      `Motif : ${data.reason}`,
-      '',
-      'Message :',
-      data.message,
-      '',
-      '—',
-      'Cabinet Médical Dr Houari Adil',
-      'Bouskoura & Ville Verte, Casablanca, Maroc'
-    ].join('\n');
-
-    const params = new URLSearchParams({ subject, body });
-    return `mailto:${EMAIL}?${params.toString()}`;
-  }
-
   if (form){
-    form.addEventListener('submit', (e) => {
+    const submitBtn = document.getElementById('submitBtn');
+    const formResult = document.getElementById('formResult');
+
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const name = document.getElementById('name');
@@ -82,18 +61,11 @@
       const reason = document.getElementById('reason');
       const message = document.getElementById('message');
 
-      const data = {
-        name: clean(name && name.value),
-        phone: clean(phone && phone.value),
-        reason: clean(reason && reason.value),
-        message: clean(message && message.value)
-      };
-
       const checks = [
-        [name, !data.name],
-        [phone, !data.phone],
-        [reason, !data.reason],
-        [message, !data.message]
+        [name, !clean(name && name.value)],
+        [phone, !clean(phone && phone.value)],
+        [reason, !clean(reason && reason.value)],
+        [message, !clean(message && message.value)]
       ];
 
       let bad = false;
@@ -104,7 +76,32 @@
 
       if (bad) return;
 
-      window.location.href = buildMailto(data);
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Envoi en cours\u2026';
+      formResult.className = 'form-result';
+      formResult.textContent = '';
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: new FormData(form)
+        });
+        const json = await res.json();
+
+        if (json.success) {
+          formResult.className = 'form-result form-result--ok';
+          formResult.textContent = 'Message envoy\u00e9 ! Nous vous r\u00e9pondrons dans les plus brefs d\u00e9lais.';
+          form.reset();
+        } else {
+          throw new Error(json.message || 'Erreur');
+        }
+      } catch {
+        formResult.className = 'form-result form-result--err';
+        formResult.textContent = 'Une erreur est survenue. Veuillez appeler le +212\u00a07\u00a017\u00a017\u00a030\u00a088 ou envoyer un email \u00e0 dradil.houari@gmail.com.';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Envoyer le message';
+      }
     });
 
     ['name','phone','reason','message'].forEach((id) => {
