@@ -30,10 +30,18 @@
         "@id": "https://adilhouari.pro/#clinic",
         "name": "Cabinet Médical Dr Houari Adil",
         "url": "https://adilhouari.pro/",
-        "description": "Cabinet médical à Bouskoura & Ville Verte (Casablanca, Maroc) : médecine générale, médecine du sport, compétence en allergologie.",
+        "description": "Cabinet médical à Bouskoura & Ville Verte (Casablanca, Maroc) : médecine générale, médecine du sport, compétence en allergologie. Visites à domicile disponibles à Bouskoura, Ville Verte, Résidence Vitoria, Casa Diaa, Al Andalous et quartiers limitrophes.",
         "telephone": ["+212717173088", "+212521249030"],
         "email": "dradil.houari@gmail.com",
-        "areaServed": ["Bouskoura", "Ville Verte", "Casablanca", "Maroc"],
+        "areaServed": [
+          "Bouskoura",
+          "Ville Verte",
+          "Résidence Vitoria",
+          "Casa Diaa",
+          "Al Andalous",
+          "Casablanca",
+          "Maroc"
+        ],
         "medicalSpecialty": [
           "https://schema.org/GeneralPractice",
           "https://schema.org/SportsMedicine",
@@ -67,7 +75,12 @@
           "availableService": [
             { "@type": "MedicalService", "name": "Consultation au cabinet" },
             { "@type": "MedicalService", "name": "Vaccination (nourrisson, enfant, adulte, personne âgée)" },
-            { "@type": "MedicalService", "name": "Visite à domicile (selon disponibilité)" }
+            {
+              "@type": "MedicalService",
+              "name": "Visite à domicile",
+              "description": "Le Dr Houari Adil se déplace directement au domicile du patient à Bouskoura, Ville Verte, Résidence Vitoria, Casa Diaa, Al Andalous et quartiers limitrophes. Idéal pour les personnes à mobilité réduite, les nourrissons et les seniors. Sur rendez-vous par téléphone.",
+              "areaServed": ["Bouskoura", "Ville Verte", "Résidence Vitoria", "Casa Diaa", "Al Andalous"]
+            }
           ],
           "worksFor": { "@id": "https://adilhouari.pro/#clinic" }
         }
@@ -86,7 +99,12 @@
       {
         "@type":"Question",
         "name":"Faites-vous des visites à domicile à Bouskoura et Ville Verte ?",
-        "acceptedAnswer":{"@type":"Answer","text":"Oui, des visites à domicile sont possibles à Bouskoura et Ville Verte selon disponibilité. Veuillez appeler pour vérifier les créneaux."}
+        "acceptedAnswer":{"@type":"Answer","text":"Oui, le Dr Houari Adil se déplace directement à votre domicile à Bouskoura, Ville Verte, Résidence Vitoria, Casa Diaa, Al Andalous et quartiers limitrophes. Service idéal pour les personnes à mobilité réduite, les nourrissons et les seniors. Prise en charge personnalisée, sans salle d'attente. Sur rendez-vous par téléphone : +212 7 17 17 30 88."}
+      },
+      {
+        "@type":"Question",
+        "name":"Dans quels quartiers le médecin se déplace-t-il à domicile ?",
+        "acceptedAnswer":{"@type":"Answer","text":"Le Dr Houari Adil assure des visites à domicile dans les quartiers suivants : Bouskoura, Ville Verte, Résidence Vitoria, Casa Diaa, Al Andalous et les quartiers limitrophes. Appelez le +212 7 17 17 30 88 pour vérifier la disponibilité dans votre zone."}
       },
       {
         "@type":"Question",
