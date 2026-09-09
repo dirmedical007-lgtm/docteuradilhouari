@@ -58,6 +58,15 @@
 
 
   <url>
+    <loc>https://adilhouari.pro/allergologie-bouskoura/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://adilhouari.pro/allergologie-bouskoura/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adilhouari.pro/allergologie-bouskoura/"/>
+  </url>
+
+  <url>
     <loc>https://adilhouari.pro/legal/mentions-legales.html</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>yearly</changefreq>
