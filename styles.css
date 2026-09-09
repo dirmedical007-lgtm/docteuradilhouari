@@ -313,23 +313,39 @@ h1{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   list-style: none;
-  margin: 0 0 16px;
+  margin: 0 0 20px;
   padding: 0;
   font-size: .82rem;
-  color: var(--muted, #6b7280);
 }
 .breadcrumb li + li::before{
   content: "›";
-  margin-right: 4px;
   color: var(--muted, #6b7280);
+  font-size: .9rem;
 }
 .breadcrumb a{
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1.5px solid var(--teal);
   color: var(--teal);
   text-decoration: none;
+  font-weight: 500;
+  transition: background .15s, color .15s;
 }
-.breadcrumb a:hover{ text-decoration: underline; }
+.breadcrumb a:hover{
+  background: var(--teal);
+  color: #fff;
+}
+.breadcrumb li[aria-current="page"]{
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--teal);
+  color: #fff;
+  font-weight: 600;
+}
 
 .note{
   margin-top: 14px;
