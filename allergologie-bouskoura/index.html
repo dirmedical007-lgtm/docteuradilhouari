@@ -198,24 +198,26 @@
 
 
     <!-- RDV -->
-    <section class="section" id="rdv" aria-labelledby="rdv-title">
+    <section class="section section--alt" id="rdv" aria-label="Prendre rendez-vous">
       <div class="container">
-        <h2 id="rdv-title">Prendre rendez-vous</h2>
-        <div class="split">
-          <div>
-            <h3>Par téléphone</h3>
-            <p><a href="tel:+212717173088" class="btn btn--primary">📞 +212 7 17 17 30 88</a></p>
-            <p><a href="tel:+212521249030" class="btn btn--ghost">📞 +212 5 21 24 90 30</a></p>
-            <h3 style="margin-top:1.5rem">Par WhatsApp</h3>
-            <p>
-              <a href="https://wa.me/212717173088?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20pour%20un%20bilan%20allergie%20%2F%20prick%20test%20%E2%80%94%20Cabinet%20Dr%20Adil%20HOUARI."
-                 class="btn btn--wa"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 aria-label="Envoyer un message WhatsApp pour un rendez-vous allergie">
-                💬 WhatsApp
-              </a>
-            </p>
+        <header class="section__head">
+          <h2>Prendre rendez-vous</h2>
+          <p class="muted">Par téléphone ou via le formulaire ci-dessous.</p>
+        </header>
+
+        <div class="grid grid--2">
+          <div class="card card--elev">
+            <h3>Rendez-vous par téléphone</h3>
+            <p class="muted">Le plus rapide : appelez directement le cabinet.</p>
+            <div class="split">
+              <a class="btn btn--primary" href="tel:+212717173088">+212 7 17 17 30 88</a>
+              <a class="btn btn--outline" href="tel:+212521249030">+212 5 21 24 90 30</a>
+            </div>
+            <a href="https://wa.me/212717173088?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20pour%20un%20bilan%20allergie%20%2F%20prick%20test%20%E2%80%94%20Cabinet%20Dr%20Adil%20HOUARI."
+               class="btn btn--wa" style="margin-top:0.75rem;display:inline-flex"
+               target="_blank" rel="noopener noreferrer">
+              💬 WhatsApp
+            </a>
             <h3 style="margin-top:1.5rem">Horaires</h3>
             <dl class="hours">
               <div class="hours__row"><dt>Lun – Ven (matin)</dt><dd>09:30 – 12:30</dd></div>
@@ -223,40 +225,46 @@
               <div class="hours__row"><dt>Samedi</dt><dd>09:30 – 13:00</dd></div>
               <div class="hours__row"><dt>Dimanche</dt><dd>Fermé</dd></div>
             </dl>
-            <p style="margin-top:0.75rem">
-              <a href="https://share.google/kmEvQgXQUYXP6X67I" class="btn btn--outline" target="_blank" rel="noopener noreferrer">📍 Google Maps</a>
-            </p>
+            <a href="https://share.google/kmEvQgXQUYXP6X67I" class="btn btn--outline" style="margin-top:0.75rem;display:inline-flex" target="_blank" rel="noopener noreferrer">📍 Google Maps</a>
           </div>
 
-          <div>
-            <h3>Formulaire de contact</h3>
-            <form class="form" id="contact-form" novalidate aria-label="Formulaire de rendez-vous allergie">
-              <input type="hidden" name="access_key" value="918ebe93-59d9-4e98-8cf9-ec641cb0d531">
-              <input type="hidden" name="subject" value="Consultation allergie — adilhouari.pro">
-              <input type="hidden" name="from_name" value="Site adilhouari.pro">
-              <input type="hidden" name="redirect" value="false">
+          <div class="card card--elev">
+            <h3>Envoyer un message</h3>
+            <form class="form" id="contact-form" novalidate>
+              <input type="hidden" name="access_key" value="918ebe93-59d9-4e98-8cf9-ec641cb0d531" />
+              <input type="hidden" name="subject" value="Consultation allergie (FR) — adilhouari.pro" />
+              <input type="hidden" name="from_name" value="Cabinet médical Dr Adil HOUARI" />
               <div class="hp-field" aria-hidden="true">
-                <label for="hp_website">Ne pas remplir</label>
-                <input type="text" id="hp_website" name="hp_website" tabindex="-1" autocomplete="off">
+                <label for="hp_website">Site web</label>
+                <input id="hp_website" name="hp_website" type="text" tabindex="-1" autocomplete="off" />
               </div>
               <div class="field">
-                <label for="name">Nom complet <span aria-hidden="true">*</span></label>
-                <input type="text" id="name" name="name" required autocomplete="name" aria-required="true">
+                <label for="name">Nom</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+                <p class="hint">Veuillez renseigner votre nom.</p>
               </div>
               <div class="field">
-                <label for="phone">Téléphone <span aria-hidden="true">*</span></label>
-                <input type="tel" id="phone" name="phone" required autocomplete="tel" aria-required="true" placeholder="0X XX XX XX XX">
+                <label for="phone">Téléphone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="0X XX XX XX XX" />
+                <p class="hint">Veuillez renseigner un numéro de téléphone.</p>
               </div>
               <div class="field">
-                <label for="reason">Motif <span aria-hidden="true">*</span></label>
-                <input type="text" id="reason" name="reason" required aria-required="true" value="Consultation allergie / Prick test">
+                <label for="reason">Motif</label>
+                <select id="reason" name="reason" required>
+                  <option value="" selected>Choisir…</option>
+                  <option value="Bilan allergie / Prick test" selected>Bilan allergie / Prick test</option>
+                  <option value="Rendez-vous">Demande de rendez-vous</option>
+                  <option value="Information">Information</option>
+                  <option value="Autre">Autre</option>
+                </select>
+                <p class="hint">Veuillez sélectionner un motif.</p>
               </div>
               <div class="field">
-                <label for="message">Message (optionnel)</label>
-                <textarea id="message" name="message" rows="3" placeholder="Symptômes, allergènes suspectés..."></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Symptômes, allergènes suspectés..."></textarea>
               </div>
-              <button type="submit" class="btn btn--primary">Envoyer</button>
-              <div class="form-result" id="form-result" role="status" aria-live="polite" hidden></div>
+              <button class="btn btn--primary" type="submit">Envoyer le message</button>
+              <div id="form-result" class="form-result" role="alert" aria-live="polite"></div>
             </form>
           </div>
         </div>
