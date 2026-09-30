@@ -284,36 +284,37 @@
     </section>
 
     <!-- Rendez-vous -->
-    <section class="section" id="rdv" aria-labelledby="rdv-title">
+    <section class="section section--alt" id="rdv" aria-label="Prendre rendez-vous">
       <div class="container">
-        <h2 id="rdv-title">Prendre rendez-vous</h2>
-        <p>Contactez le cabinet par téléphone ou via le formulaire ci-dessous pour planifier votre visite médicale permis de conduire.</p>
-        <div class="split">
-          <div>
-            <h3>Par téléphone</h3>
+        <header class="section__head">
+          <h2>Prendre rendez-vous</h2>
+          <p class="muted">Par téléphone ou via le formulaire ci-dessous.</p>
+        </header>
+        <div class="grid grid--2">
+
+          <!-- Coordonnées -->
+          <div class="card card--elev">
             <p>
               <a href="tel:+212717173088" class="btn btn--primary">📞 +212 7 17 17 30 88</a>
             </p>
-            <p>
+            <p style="margin-top:0.75rem">
               <a href="tel:+212521249030" class="btn btn--ghost">📞 +212 5 21 24 90 30</a>
             </p>
-            <h3 style="margin-top:1.5rem">Par WhatsApp</h3>
-            <p>
-              <a href="https://wa.me/212717173088?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20pour%20une%20visite%20m%C3%A9dicale%20permis%20de%20conduire%20%E2%80%94%20Cabinet%20Dr%20Adil%20HOUARI."
+            <p style="margin-top:0.75rem">
+              <a href="https://wa.me/212717173088?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20pour%20une%20visite%20m%C3%A9dicale%20permis%20de%20conduire%20%E2%80%94%20Cabinet%20m%C3%A9dical%20Dr%20Adil%20HOUARI."
                  class="btn btn--wa"
                  target="_blank"
                  rel="noopener noreferrer"
-                 aria-label="Envoyer un message WhatsApp au Dr Houari pour un rendez-vous permis de conduire">
+                 aria-label="Envoyer un message WhatsApp pour un rendez-vous permis de conduire">
                 💬 WhatsApp
               </a>
             </p>
-            <h3 style="margin-top:1.5rem">Adresse</h3>
-            <address>
-              Diar al Andalouss, Jasmine Offices 4<br>
-              Appart N°10, Étage 2<br>
-              Bouskoura 27182, Casablanca-Settat
-            </address>
-            <p style="margin-top:0.75rem">
+            <dl class="hours" style="margin-top:1.25rem">
+              <dt>Lun – Ven</dt><dd>09:30 – 13:00 &amp; 16:00 – 20:00</dd>
+              <dt>Samedi</dt><dd>09:30 – 13:00</dd>
+              <dt>Dimanche</dt><dd>Fermé</dd>
+            </dl>
+            <p style="margin-top:1rem">
               <a href="https://share.google/kmEvQgXQUYXP6X67I"
                  class="btn btn--outline"
                  target="_blank"
@@ -323,9 +324,8 @@
             </p>
           </div>
 
-          <!-- Contact form -->
-          <div>
-            <h3>Formulaire de contact</h3>
+          <!-- Formulaire -->
+          <div class="card card--elev">
             <form class="form"
                   id="contact-form"
                   novalidate
@@ -353,8 +353,13 @@
               </div>
               <div class="field">
                 <label for="reason">Motif <span aria-hidden="true">*</span></label>
-                <input type="text" id="reason" name="reason" required
-                       aria-required="true" value="Visite médicale permis de conduire">
+                <select id="reason" name="reason" required aria-required="true">
+                  <option value="" selected>Choisir…</option>
+                  <option value="Visite médicale permis de conduire" selected>Visite médicale permis de conduire</option>
+                  <option value="Renouvellement permis">Renouvellement permis</option>
+                  <option value="Rendez-vous médecine générale">Rendez-vous médecine générale</option>
+                  <option value="Autre">Autre</option>
+                </select>
               </div>
               <div class="field">
                 <label for="message">Message (optionnel)</label>
@@ -365,6 +370,7 @@
               <div class="form-result" id="form-result" role="status" aria-live="polite" hidden></div>
             </form>
           </div>
+
         </div>
       </div>
     </section>
