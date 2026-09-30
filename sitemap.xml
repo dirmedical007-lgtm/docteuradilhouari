@@ -104,6 +104,33 @@
   </url>
 
   <url>
+    <loc>https://adilhouari.pro/dr-adil-houari/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://adilhouari.pro/dr-adil-houari/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adilhouari.pro/dr-adil-houari/"/>
+  </url>
+
+  <url>
+    <loc>https://adilhouari.pro/vaccination-bouskoura/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://adilhouari.pro/vaccination-bouskoura/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adilhouari.pro/vaccination-bouskoura/"/>
+  </url>
+
+  <url>
+    <loc>https://adilhouari.pro/medecin-domicile-bouskoura/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://adilhouari.pro/medecin-domicile-bouskoura/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adilhouari.pro/medecin-domicile-bouskoura/"/>
+  </url>
+
+  <url>
     <loc>https://adilhouari.pro/legal/mentions-legales.html</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>yearly</changefreq>
