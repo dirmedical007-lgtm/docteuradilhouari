@@ -16,7 +16,7 @@ contact:
   email: "dradil.houari@gmail.com"
 address: "Andalous III, Jasmine 4, Appart N°10 Étage 2, Bouskoura, Casablanca, Maroc"
 hours:
-  mon-fri: "09:00-18:00"
+  mon-fri: "09:30-18:00"
   sat: "09:00-13:00"
   sun: "closed"
 home_visits:
