@@ -748,3 +748,40 @@ iframe{max-width:100%;border-radius:16px}
 footer{border-top:1px solid #dcece9}
 html[dir="rtl"] .service::before{left:auto;right:0}
 @media(max-width:560px){.header__inner{min-height:64px}.hero__cta{display:flex;flex-wrap:wrap}.hero__cta .btn{flex:1 1 220px}.service{padding:20px}}
+
+/* Mobile-first homepage: show real practice photo before secondary details. */
+.hero__intro{max-width:65ch}
+.hero__card .qr{min-width:0}
+.hero__card .qr__text{min-width:0;overflow-wrap:anywhere}
+.hero__card .card__row>div{min-width:0}
+@media(max-width:980px){
+  .hero__grid{display:flex;flex-direction:column;gap:18px}
+  .hero__copy{display:contents}
+  .hero__copy>.badge,.hero__copy>h1,.hero__copy>.hero__intro,.hero__copy>.hero__cta,.hero__copy>p{order:0}
+  .hero__copy>.badge{align-self:flex-start;margin-bottom:-8px}
+  .hero__copy>h1{margin:0}
+  .hero__copy>.hero__intro{margin:0}
+  .hero__copy>.hero__cta{margin:4px 0 0;width:100%}
+  .hero__card{order:1;width:100%;max-width:none}
+  .hero__copy>.hero__details{order:2;width:100%}
+  .hero__card .card__photo{margin-block:12px}
+  .hero__card .qr{flex-wrap:wrap;gap:12px}
+  .hero__card .qr img{width:90px;height:90px}
+}
+@media(max-width:560px){
+  .hero{padding-block:26px 36px}
+  .hero__grid{gap:14px}
+  .hero__copy>h1{font-size:clamp(1.8rem,7.2vw,2.35rem);line-height:1.17;max-width:100%}
+  .hero__intro{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;font-size:1rem;line-height:1.55;color:#4d6265}
+  .hero__copy>p:has(>.link){order:3;margin:4px 0 0}
+  .hero__copy>.hero__cta{gap:9px}
+  .hero__copy>.hero__cta .btn{font-size:.93rem;padding:12px;min-height:46px}
+  .hero__card>.card{padding:14px}
+  .hero__card .card__top{margin-bottom:4px}
+  .hero__card .card__photo{aspect-ratio:4/3;object-fit:cover}
+  .hero__card .card__row{grid-template-columns:26px minmax(0,1fr);gap:9px}
+  .hero__card .value{overflow-wrap:anywhere;font-size:.94rem}
+  .hero__card .qr__text{font-size:.87rem}
+  .fab-wa{bottom:82px;right:14px;transform:scale(.86);transform-origin:bottom right}
+  html[dir="rtl"] .fab-wa{right:auto;left:14px;transform-origin:bottom left}
+}
