@@ -801,3 +801,42 @@ html[dir="rtl"] .service::before{left:auto;right:0}
   .fab-wa{bottom:96px;right:10px;transform:scale(.74);opacity:.92}
   html[dir="rtl"] .fab-wa{right:auto;left:10px}
 }
+
+/* Premium medical identity: restrained typography, meaningful spacing and controls. */
+:root{--teal:#169e99;--teal-3:#087e7b;--bg:#f8fbfa;--text:#283a3d;--muted:#56676a;--radius:18px}
+body{background:#f8fbfa}
+.header{box-shadow:0 3px 18px rgba(24,69,69,.045)}
+.brand__mark{box-shadow:none;background:#0eaaa3}
+.hero{background:linear-gradient(118deg,#f8fdfc 5%,#e9f8f5 100%);padding-block:clamp(45px,6vw,88px)}
+.hero__copy h1{font-weight:850;letter-spacing:-.042em}
+.hero__credentials{font-size:clamp(.95rem,1.3vw,1.1rem);color:#0b8985;font-weight:750;margin:0 0 17px;line-height:1.5}
+.hero__copy .lead{line-height:1.72}
+.hero__cta .btn{gap:10px;border-radius:12px;letter-spacing:0}
+.hero__cta svg{flex-shrink:0}
+.hero__card>.card{border-radius:22px}
+.hero__card .card__top{padding-bottom:2px}
+.hero__card .card__photo{border-radius:14px}
+.section__head{max-width:850px}
+.section__head h2{font-weight:800;letter-spacing:-.04em}
+.service{border-radius:18px;box-shadow:0 8px 25px rgba(24,74,74,.045);padding:clamp(20px,2.4vw,28px)}
+.service::before{width:0}
+.service__icon{border-radius:14px;background:#e5f7f3;color:#087e7b}
+.service h3{font-weight:800;letter-spacing:-.02em}
+.service:hover{transform:translateY(-2px);box-shadow:0 16px 35px rgba(24,74,74,.085)}
+.section--alt{background:#eef8f6}
+.fab-wa{box-shadow:0 8px 25px rgba(18,91,88,.15)}
+@media(max-width:980px){
+ .hero__copy>.hero__credentials{order:0;margin:0;color:#087e7b}
+}
+@media(max-width:560px){
+ .hero{padding-block:25px 38px}
+ .hero__copy>h1{font-size:clamp(1.65rem,6vw,2.05rem);line-height:1.21}
+ .hero__credentials{font-size:.89rem;line-height:1.45;margin:0}
+ .hero__intro-short{font-size:.96rem;line-height:1.62}
+ .hero__cta .btn{font-size:.94rem;min-height:49px}
+ .hero__card>.card{border-radius:18px}
+ .fab-wa{position:fixed;right:12px;bottom:100px;transform:scale(.7);opacity:.82}
+ html[dir="rtl"] .fab-wa{right:auto;left:12px}
+ .service:hover{transform:none}
+}
+@media(prefers-reduced-motion:reduce){.service:hover{transform:none}}
