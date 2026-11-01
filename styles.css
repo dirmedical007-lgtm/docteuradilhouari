@@ -785,3 +785,19 @@ html[dir="rtl"] .service::before{left:auto;right:0}
   .fab-wa{bottom:82px;right:14px;transform:scale(.86);transform-origin:bottom right}
   html[dir="rtl"] .fab-wa{right:auto;left:14px;transform-origin:bottom left}
 }
+
+/* Final mobile typography and non-overlapping contact shortcut */
+.hero__intro-short{display:none}
+@media(max-width:560px){
+  .header__inner{padding-block:9px;min-height:58px}
+  .brand__mark{width:38px;height:38px;border-radius:11px;flex-shrink:0}
+  .brand__text strong{font-size:1rem}
+  .brand__text span{font-size:.76rem;line-height:1.3}
+  .navbtn{padding:9px 11px}
+  .hero__copy>h1{font-size:clamp(1.62rem,6.2vw,2.05rem);line-height:1.22;letter-spacing:-.035em}
+  html[dir="rtl"] .hero__copy>h1{letter-spacing:0}
+  .hero__intro{display:none}
+  .hero__intro-short{display:block;order:0;margin:0;color:#4d6265;font-size:1rem;line-height:1.6}
+  .fab-wa{bottom:96px;right:10px;transform:scale(.74);opacity:.92}
+  html[dir="rtl"] .fab-wa{right:auto;left:10px}
+}
