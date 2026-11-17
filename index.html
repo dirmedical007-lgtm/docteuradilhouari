@@ -16,8 +16,10 @@
   <link rel="alternate" hreflang="ar" href="https://adilhouari.pro/ar/" />
   <link rel="alternate" hreflang="x-default" href="https://adilhouari.pro/" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph / social sharing -->
+  <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cabinet médical Dr Adil HOUARI" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:title" content="Dr Adil HOUARI – Médecin à Bouskoura" />
   <meta property="og:description" content="Médecine générale, médecine du sport, compétence en allergologie. Consultations au cabinet et visites à domicile possibles selon disponibilité." />
@@ -34,6 +36,13 @@
   {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://adilhouari.pro/#website",
+        "url": "https://adilhouari.pro/",
+        "name": "Cabinet médical Dr Adil HOUARI",
+        "alternateName": "Dr Adil HOUARI"
+      },
       {
         "@type": "MedicalClinic",
         "@id": "https://adilhouari.pro/#clinic",
@@ -256,7 +265,7 @@
               <p>Dr Adil HOUARI</p>
             </div>
 
-            <img class="card__photo" fetchpriority="high" src="assets/cabinet.jpg" width="738" height="559" loading="lazy" decoding="async" alt="Photo du cabinet médical Dr Adil HOUARI à Bouskoura" />
+            <img class="card__photo" fetchpriority="high" src="assets/cabinet.jpg" width="738" height="559" loading="eager" decoding="async" alt="Photo du cabinet médical Dr Adil HOUARI à Bouskoura" />
 
             <div class="card__row">
               <div class="icon" aria-hidden="true">📍</div>
