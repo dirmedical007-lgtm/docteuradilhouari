@@ -1155,3 +1155,22 @@ html[dir=rtl] .home-v4.inner-v4 .hero--inner h1,html[dir=rtl] .home-v4.inner-v4 
  .home-v4 #services .numbered-grid>.numbered-item,.home-v4.inner-v4 main .numbered-grid>.numbered-item,.home-v4.inner-v4 .clinical-page .numbered-clinical{padding-block:20px 24px;padding-inline-start:40px}
  .home-v4 .numbered-item>.paragraph-number,.home-v4 .numbered-clinical>.paragraph-number{top:23px;font-size:.85rem}
 }
+
+/* V5: contact mobile et navigation des langues. */
+.home-v4 .mobile-contact{display:none}
+.home-v4 .clinical-languages{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.home-v4 .clinical-languages a{font-size:.8rem;color:inherit;text-underline-offset:4px}
+.home-v4 .clinical-languages [aria-current=page]{font-weight:700;text-decoration:underline}
+.home-v4 .header__inner:has(.clinical-languages){flex-wrap:wrap}
+@media(max-width:760px){
+ body.home-v4.has-mobile-contact{padding-bottom:calc(68px + env(safe-area-inset-bottom,0px))}
+ .home-v4.has-mobile-contact .fab-wa{display:none}
+ .home-v4.has-mobile-contact footer{padding-bottom:24px}
+ .home-v4.has-mobile-contact .mobile-contact{position:fixed;z-index:100;inset-inline:0;bottom:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:#123c42;color:#fff;border-top:1px solid #c6dfd1;padding:5px 8px calc(5px + env(safe-area-inset-bottom,0px))}
+ .home-v4 .mobile-contact a{display:flex;min-height:56px;flex-direction:column;gap:3px;justify-content:center;align-items:center;color:#fff;text-decoration:none;font-size:.75rem;line-height:1.2;text-align:center}
+ .home-v4 .mobile-contact a+a{border-inline-start:1px solid #527575}
+ .home-v4 .mobile-contact svg{width:21px;height:21px;color:#c6dfd1;flex-shrink:0}
+ .home-v4 .mobile-contact a:focus-visible{outline:2px solid #fff;outline-offset:-3px}
+ .home-v4.has-mobile-contact :is(input,textarea,select,button,a){scroll-margin-bottom:84px}
+ .home-v4 .header__inner:has(.clinical-languages) .clinical-languages{flex-basis:100%;justify-content:flex-end}
+}
