@@ -72,10 +72,7 @@
         "الدار البيضاء",
         "المغرب"
       ],
-      "medicalSpecialty": [
-        "https://schema.org/GeneralPractice",
-        "https://schema.org/SportsMedicine"
-      ],
+      "medicalSpecialty": "https://schema.org/PrimaryCare",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Diar al Andalouss, Jasmine Offices 4, Appart N°10, Étage 2",
@@ -110,81 +107,154 @@
         }
       ],
       "employee": {
-        "@type": "Physician",
-        "@id": "https://adilhouari.pro/#physician",
-        "name": "الدكتور هواري عادل",
-        "jobTitle": "طبيب عام",
-        "url": "https://adilhouari.pro/dr-adil-houari/",
-        "telephone": [
-          "+212717173088",
-          "+212521249030"
-        ],
-        "email": "dradil.houari@gmail.com",
-        "medicalSpecialty": [
-          "https://schema.org/GeneralPractice",
-          "https://schema.org/SportsMedicine"
-        ],
-        "availableService": [
+        "@id": "https://adilhouari.pro/#physician"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Consultations, examens et soins",
+        "itemListElement": [
           {
-            "@type": "MedicalService",
-            "name": "استشارة في العيادة"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Consultation de médecine générale",
+              "url": "https://adilhouari.pro/medecine-generale-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "التطعيم (الرضع، الأطفال، البالغون، كبار السن)"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Suivi du diabète et du prédiabète",
+              "url": "https://adilhouari.pro/suivi-diabete-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "الموجات فوق الصوتية للعضلات والمفاصل"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Médecine du sport",
+              "url": "https://adilhouari.pro/medecine-du-sport-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "الحقن العلاجية داخل المفاصل وحول المفاصل"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bilan allergologique",
+              "url": "https://adilhouari.pro/allergologie-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "تخطيط القلب الكهربائي (ECG)"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Vaccination",
+              "url": "https://adilhouari.pro/vaccination-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "الفحص الطبي وشهادة اللياقة الرياضية"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Visites à domicile",
+              "url": "https://adilhouari.pro/medecin-domicile-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "الشهادة الطبية لرخصة السياقة"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Suivi de l’hypertension artérielle",
+              "url": "https://adilhouari.pro/hypertension-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "اختبارات الحساسية الجلدية — Prick tests (حبوب اللقاح، عث الغبار، العفن، شعر الحيوانات)"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Échographie générale",
+              "url": "https://adilhouari.pro/echographie-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "زيارة منزلية",
-            "description": "يتنقل الدكتور هواري عادل إلى منزل المريض في بوسكورة، فيل فيرت، كازا ضياء، فيتوريا والأحياء المجاورة. مثالي للأشخاص ذوي الإعاقة الحركية والرضع وكبار السن. بموعد مسبق عبر الهاتف.",
-            "areaServed": [
-              "بوسكورة",
-              "فيل فيرت",
-              "ريزيدانس فيتوريا",
-              "كازا ضياء",
-              "الأندلس"
-            ]
-          }
-        ],
-        "worksFor": {
-          "@id": "https://adilhouari.pro/#clinic"
-        },
-        "hasCredential": [
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Diplôme de docteur en médecine (Casablanca, 2001)"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Échographie musculo-squelettique",
+              "url": "https://adilhouari.pro/echographie-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Diplôme universitaire de médecine du sport, Université de Bordeaux"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Infiltrations",
+              "url": "https://adilhouari.pro/infiltrations-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "EducationalOccupationalCredential",
-            "name": "FIFA Diploma in Football Medicine (2023)"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Électrocardiogramme (ECG)",
+              "url": "https://adilhouari.pro/ecg-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Certificat médical — permis de conduire",
+              "url": "https://adilhouari.pro/medecin-agree-permis-conduire-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tests cutanés d’allergie (prick tests)",
+              "url": "https://adilhouari.pro/allergologie-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           }
         ]
       }
@@ -202,12 +272,52 @@
         "@id": "https://adilhouari.pro/#clinic"
       },
       "mainEntity": {
-        "@id": "https://adilhouari.pro/#physician"
+        "@id": "https://adilhouari.pro/#clinic"
       }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://adilhouari.pro/#physician",
+      "name": "Dr Adil HOUARI",
+      "jobTitle": "Médecin généraliste et spécialiste en médecine du sport",
+      "url": "https://adilhouari.pro/dr-adil-houari/",
+      "worksFor": {
+        "@id": "https://adilhouari.pro/#clinic"
+      },
+      "knowsLanguage": [
+        "fr",
+        "ar"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Diplôme de docteur en médecine (Casablanca, 2001)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Diplôme universitaire de médecine du sport, Université de Bordeaux"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "FIFA Diploma in Football Medicine (2023)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Formation et stages cliniques en allergologie — Hôpital Necker, Paris (2004)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Reconnaissance comme spécialiste en médecine du sport — CNOM (décembre 2025)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Diabetes is Primary CE Certificate Program 2025 — American Diabetes Association"
+        }
+      ]
     }
   ]
 }
-  </script>
+</script>
 
   <!-- JSON-LD: FAQPage -->
   <script type="application/ld+json">

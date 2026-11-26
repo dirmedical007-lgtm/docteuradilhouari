@@ -63,10 +63,7 @@
         "Casablanca",
         "Maroc"
       ],
-      "medicalSpecialty": [
-        "https://schema.org/GeneralPractice",
-        "https://schema.org/SportsMedicine"
-      ],
+      "medicalSpecialty": "https://schema.org/PrimaryCare",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Diar al Andalouss, Jasmine Offices 4, Appart N°10, Étage 2",
@@ -101,81 +98,154 @@
         }
       ],
       "employee": {
-        "@type": "Physician",
-        "@id": "https://adilhouari.pro/#physician",
-        "name": "Dr Adil HOUARI",
-        "jobTitle": "Médecin",
-        "url": "https://adilhouari.pro/dr-adil-houari/",
-        "telephone": [
-          "+212717173088",
-          "+212521249030"
-        ],
-        "email": "dradil.houari@gmail.com",
-        "medicalSpecialty": [
-          "https://schema.org/GeneralPractice",
-          "https://schema.org/SportsMedicine"
-        ],
-        "availableService": [
+        "@id": "https://adilhouari.pro/#physician"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Consultations, examens et soins",
+        "itemListElement": [
           {
-            "@type": "MedicalService",
-            "name": "Consultation au cabinet"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Consultation de médecine générale",
+              "url": "https://adilhouari.pro/medecine-generale-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "Vaccination (nourrisson, enfant, adulte, personne âgée)"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Suivi du diabète et du prédiabète",
+              "url": "https://adilhouari.pro/suivi-diabete-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "Échographie musculo-squelettique"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Médecine du sport",
+              "url": "https://adilhouari.pro/medecine-du-sport-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "Infiltrations articulaires et péri-articulaires"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bilan allergologique",
+              "url": "https://adilhouari.pro/allergologie-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "Électrocardiogramme (ECG)"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Vaccination",
+              "url": "https://adilhouari.pro/vaccination-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "Bilan médical et certificat d'aptitude sportive"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Visites à domicile",
+              "url": "https://adilhouari.pro/medecin-domicile-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "Certificat médical pour le permis de conduire"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Suivi de l’hypertension artérielle",
+              "url": "https://adilhouari.pro/hypertension-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "Tests cutanés d'allergie — Prick tests (pollens, acariens, moisissures, animaux)"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Échographie générale",
+              "url": "https://adilhouari.pro/echographie-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "MedicalService",
-            "name": "Visite à domicile",
-            "description": "Le Dr Adil HOUARI se déplace directement au domicile du patient à Bouskoura, Ville Verte, Résidence Vitoria, Casa Diaa, Al Andalous et quartiers limitrophes. Idéal pour les personnes à mobilité réduite, les nourrissons et les seniors. Sur rendez-vous par téléphone.",
-            "areaServed": [
-              "Bouskoura",
-              "Ville Verte",
-              "Résidence Vitoria",
-              "Casa Diaa",
-              "Al Andalous"
-            ]
-          }
-        ],
-        "worksFor": {
-          "@id": "https://adilhouari.pro/#clinic"
-        },
-        "hasCredential": [
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Diplôme de docteur en médecine (Casablanca, 2001)"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Échographie musculo-squelettique",
+              "url": "https://adilhouari.pro/echographie-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Diplôme universitaire de médecine du sport, Université de Bordeaux"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Infiltrations",
+              "url": "https://adilhouari.pro/infiltrations-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           },
           {
-            "@type": "EducationalOccupationalCredential",
-            "name": "FIFA Diploma in Football Medicine (2023)"
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Électrocardiogramme (ECG)",
+              "url": "https://adilhouari.pro/ecg-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Certificat médical — permis de conduire",
+              "url": "https://adilhouari.pro/medecin-agree-permis-conduire-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tests cutanés d’allergie (prick tests)",
+              "url": "https://adilhouari.pro/allergologie-bouskoura/",
+              "provider": {
+                "@id": "https://adilhouari.pro/#clinic"
+              }
+            }
           }
         ]
       }
@@ -193,12 +263,52 @@
         "@id": "https://adilhouari.pro/#clinic"
       },
       "mainEntity": {
-        "@id": "https://adilhouari.pro/#physician"
+        "@id": "https://adilhouari.pro/#clinic"
       }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://adilhouari.pro/#physician",
+      "name": "Dr Adil HOUARI",
+      "jobTitle": "Médecin généraliste et spécialiste en médecine du sport",
+      "url": "https://adilhouari.pro/dr-adil-houari/",
+      "worksFor": {
+        "@id": "https://adilhouari.pro/#clinic"
+      },
+      "knowsLanguage": [
+        "fr",
+        "ar"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Diplôme de docteur en médecine (Casablanca, 2001)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Diplôme universitaire de médecine du sport, Université de Bordeaux"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "FIFA Diploma in Football Medicine (2023)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Formation et stages cliniques en allergologie — Hôpital Necker, Paris (2004)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Reconnaissance comme spécialiste en médecine du sport — CNOM (décembre 2025)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Diabetes is Primary CE Certificate Program 2025 — American Diabetes Association"
+        }
+      ]
     }
   ]
 }
-  </script>
+</script>
 
   <!-- JSON-LD: FAQPage -->
   <script type="application/ld+json">
@@ -368,7 +478,7 @@
             <h3>Consultation de médecine générale</h3>
             <p>Le Dr Adil HOUARI reçoit au cabinet à Bouskoura les nourrissons, les enfants et les adultes pour des consultations de médecine générale et le suivi de l’hypertension et du diabète.</p>
             <p>Pour prendre rendez-vous, appelez le <a href="tel:+212717173088">+212 7 17 17 30 88</a>. Des <a href="medecin-domicile-bouskoura/">visites à domicile</a> sont possibles selon disponibilité.</p>
-          </article>
+          <p><a class="link" href="/medecine-generale-bouskoura/">En savoir plus — Consultation de médecine générale</a></p></article>
           <article class="card service numbered-item" role="listitem"><span class="paragraph-number" aria-hidden="true">02</span>
             
             <h3>Suivi du diabète et du prédiabète</h3>
@@ -410,27 +520,27 @@
          <h3>Suivi de l’hypertension artérielle</h3> 
 
 <p>Nous assurons la prise en charge et le suivi de l’hypertension artérielle et du diabète, selon les dernières recommandations internationales.</p>
-  </article>
+  <p><a class="link" href="/hypertension-bouskoura/">En savoir plus — Suivi de l’hypertension artérielle</a></p></article>
           <article class="card service numbered-item" role="listitem"><span class="paragraph-number" aria-hidden="true">08</span>
             
             <h3>Échographie générale</h3>
             <p>Un examen d’imagerie médicale non invasif, indolore et sans rayonnement ionisant, permettant une évaluation diagnostique précise et adaptée aux besoins de chaque patient.</p>
-          </article>
+          <p><a class="link" href="/echographie-bouskoura/">En savoir plus — Échographie générale</a></p></article>
           <article class="card service numbered-item" role="listitem"><span class="paragraph-number" aria-hidden="true">09</span>
             
             <h3>Échographie musculo-squelettique</h3>
             <p>Exploration des muscles, tendons et articulations directement au cabinet.</p>
-          </article>
+          <p><a class="link" href="/echographie-bouskoura/">En savoir plus — Échographie musculo-squelettique</a></p></article>
           <article class="card service numbered-item" role="listitem"><span class="paragraph-number" aria-hidden="true">10</span>
             
             <h3>Infiltrations</h3>
             <p>Infiltrations articulaires et péri-articulaires pour soulager la douleur et l’inflammation. Geste précis réalisé au cabinet.</p>
-          </article>
+          <p><a class="link" href="/infiltrations-bouskoura/">En savoir plus — Infiltrations</a></p></article>
           <article class="card service numbered-item" role="listitem"><span class="paragraph-number" aria-hidden="true">11</span>
             
             <h3>Électrocardiogramme (ECG)</h3>
             <p>Électrocardiogramme réalisé au cabinet pour le dépistage et le suivi cardiaque.</p>
-          </article>
+          <p><a class="link" href="/ecg-bouskoura/">En savoir plus — Électrocardiogramme (ECG)</a></p></article>
           <article class="card service numbered-item" role="listitem"><span class="paragraph-number" aria-hidden="true">12</span>
             
             <h3>Certificat médical — Permis de conduire</h3>

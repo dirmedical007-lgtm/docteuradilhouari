@@ -25,76 +25,108 @@
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://adilhouari.pro/" },
-        { "@type": "ListItem", "position": 2, "name": "Consultation allergie Bouskoura", "item": "https://adilhouari.pro/allergologie-bouskoura/" }
-      ]
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://adilhouari.pro/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Consultation allergie Bouskoura",
+        "item": "https://adilhouari.pro/allergologie-bouskoura/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Consultation allergie à Bouskoura – Dr Adil HOUARI",
+    "description": "Bilan et tests d'allergie à Bouskoura, Ville Verte. Prick tests disponibles au cabinet du Dr Adil HOUARI.",
+    "url": "https://adilhouari.pro/allergologie-bouskoura/",
+    "inLanguage": "fr",
+    "publisher": {
+      "@id": "https://adilhouari.pro/#clinic"
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
+    "about": {
+      "@type": "Service",
       "name": "Consultation allergie à Bouskoura – Dr Adil HOUARI",
-      "description": "Bilan et tests d'allergie à Bouskoura, Ville Verte. Prick tests disponibles au cabinet du Dr Adil HOUARI.",
       "url": "https://adilhouari.pro/allergologie-bouskoura/",
-      "inLanguage": "fr",
-      "author": {
-        "@type": "Physician",
-        "name": "Dr Adil HOUARI",
-        "telephone": "+212717173088",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Diar al Andalouss, Jasmine Offices 4, Appart N°10, Étage 2",
-          "addressLocality": "Bouskoura",
-          "postalCode": "27182",
-          "addressRegion": "Casablanca-Settat",
-          "addressCountry": "MA"
+      "provider": {
+        "@id": "https://adilhouari.pro/#clinic"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Où faire un test d'allergie à Bouskoura ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le Dr Adil HOUARI réalise des prick tests directement au cabinet à Bouskoura, sans avoir besoin de se déplacer à Casablanca. Prenez rendez-vous au +212 7 17 17 30 88 ."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quel médecin consulter pour une allergie à Bouskoura ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le Dr Adil HOUARI, médecin généraliste à Bouskoura avec compétence en allergologie, assure le bilan et le suivi des allergies respiratoires. Il réalise les prick tests au cabinet et oriente vers un spécialiste si nécessaire."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qu'est-ce qu'un prick test ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le prick test est un test cutané rapide : de petites gouttes d'extraits allergéniques (pollens, acariens, phanères de chat…) sont déposées sur l'avant-bras, puis une légère piqûre est effectuée. Une réaction locale indique une sensibilisation à l'allergène. Résultat en 15 à 20 minutes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les prick tests sont-ils douloureux ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. Le geste est rapide et peu invasif, bien toléré par les adultes comme par les enfants."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Faut-il une ordonnance pour faire un prick test à Bouskoura ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non, aucune ordonnance n'est nécessaire. Appelez directement le +212 7 17 17 30 88 pour prendre rendez-vous au cabinet à Bouskoura."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "À partir de quel âge peut-on faire un bilan allergie ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les prick tests peuvent être réalisés dès 3 ans. Le Dr Adil HOUARI adapte le protocole aux enfants pour un examen rapide et bien toléré."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Couvrez-vous les consultations allergie à Ville Verte et Nouaceur ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. Le cabinet à Bouskoura est facilement accessible depuis Ville Verte, Casa Diaa, la Résidence Vitoria et toute la préfecture de Nouaceur."
         }
       }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Où faire un test d'allergie à Bouskoura ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Le Dr Adil HOUARI réalise des prick tests (tests cutanés d'allergie) directement au cabinet à Bouskoura, sans avoir besoin de se déplacer à Casablanca. Prenez rendez-vous au +212 7 17 17 30 88."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quel médecin consulter pour une allergie à Bouskoura ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Le Dr Adil HOUARI, médecin généraliste à Bouskoura avec compétence en allergologie, assure le bilan et le suivi des allergies respiratoires. Il réalise les prick tests au cabinet et oriente vers un spécialiste si nécessaire."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Qu'est-ce qu'un prick test ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Le prick test est un test cutané rapide qui consiste à déposer de petites gouttes d'extraits allergéniques (pollens, acariens, phanères de chat…) sur l'avant-bras, puis à piquer légèrement la peau. Une réaction locale (rougeur, gonflement) indique une sensibilisation à l'allergène testé. Le résultat est disponible en 15 à 20 minutes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Les prick tests sont-ils douloureux ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Non. Le prick test est un geste rapide et peu invasif. La légère piqûre est indolore dans la grande majorité des cas. Le test est bien toléré par les adultes comme par les enfants."
-          }
-        }
-      ]
-    }
-  ]
-  </script>
+    ]
+  }
+]
+</script>
 </head>
 <body class="home-v4 inner-v4 has-mobile-contact">
 

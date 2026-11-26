@@ -28,60 +28,68 @@
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://adilhouari.pro/" },
-        { "@type": "ListItem", "position": 2, "name": "Médecin à domicile Bouskoura", "item": "https://adilhouari.pro/medecin-domicile-bouskoura/" }
-      ]
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://adilhouari.pro/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Médecin à domicile Bouskoura",
+        "item": "https://adilhouari.pro/medecin-domicile-bouskoura/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Médecin à domicile à Bouskoura & Ville Verte – Dr Adil HOUARI",
+    "description": "Visite médicale à domicile à Bouskoura, Ville Verte, Casa Diaa, Vitoria. Sur rendez-vous selon disponibilité. Tarif : 400 DH.",
+    "url": "https://adilhouari.pro/medecin-domicile-bouskoura/",
+    "inLanguage": "fr",
+    "publisher": {
+      "@id": "https://adilhouari.pro/#clinic"
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
+    "about": {
+      "@type": "Service",
       "name": "Médecin à domicile à Bouskoura & Ville Verte – Dr Adil HOUARI",
-      "description": "Visite médicale à domicile à Bouskoura, Ville Verte, Casa Diaa, Vitoria. Sur rendez-vous selon disponibilité. Tarif : 400 DH.",
       "url": "https://adilhouari.pro/medecin-domicile-bouskoura/",
-      "inLanguage": "fr",
-      "author": {
-        "@type": "Physician",
-        "name": "Dr Adil HOUARI",
-        "telephone": "+212717173088",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Diar al Andalouss, Jasmine Offices 4, Appart N°10, Étage 2",
-          "addressLocality": "Bouskoura",
-          "postalCode": "27182",
-          "addressRegion": "Casablanca-Settat",
-          "addressCountry": "MA"
+      "provider": {
+        "@id": "https://adilhouari.pro/#clinic"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quelles zones sont couvertes pour les visites à domicile ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le Dr Adil HOUARI assure des visites à domicile à Bouskoura, Ville Verte, Casa Diaa, Vitoria et les quartiers limitrophes, selon disponibilité."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quel est le tarif d'une visite à domicile ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le tarif standard d'une visite à domicile est de 400 DH."
         }
       }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Quelles zones sont couvertes pour les visites à domicile ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Le Dr Adil HOUARI assure des visites à domicile à Bouskoura, Ville Verte, Casa Diaa, Vitoria et les quartiers limitrophes, selon disponibilité."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quel est le tarif d'une visite à domicile ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Le tarif standard d'une visite à domicile est de 400 DH."
-          }
-        }
-      ]
-    }
-  ]
-  </script>
+    ]
+  }
+]
+</script>
 </head>
 <body class="home-v4 inner-v4 has-mobile-contact">
 

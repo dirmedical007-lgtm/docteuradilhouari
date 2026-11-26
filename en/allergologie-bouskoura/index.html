@@ -25,76 +25,84 @@
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://adilhouari.pro/en/" },
-        { "@type": "ListItem", "position": 2, "name": "Allergy Assessment Bouskoura", "item": "https://adilhouari.pro/en/allergologie-bouskoura/" }
-      ]
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://adilhouari.pro/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Allergy Assessment Bouskoura",
+        "item": "https://adilhouari.pro/en/allergologie-bouskoura/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Allergy Assessment in Bouskoura – Dr Adil HOUARI",
+    "description": "Allergy assessment and prick tests in Bouskoura, Ville Verte. Dr Adil HOUARI's medical practice.",
+    "url": "https://adilhouari.pro/en/allergologie-bouskoura/",
+    "inLanguage": "en",
+    "publisher": {
+      "@id": "https://adilhouari.pro/#clinic"
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
+    "about": {
+      "@type": "Service",
       "name": "Allergy Assessment in Bouskoura – Dr Adil HOUARI",
-      "description": "Allergy assessment and prick tests in Bouskoura, Ville Verte. Dr Adil HOUARI's medical practice.",
       "url": "https://adilhouari.pro/en/allergologie-bouskoura/",
-      "inLanguage": "en",
-      "author": {
-        "@type": "Physician",
-        "name": "Dr Adil HOUARI",
-        "telephone": "+212717173088",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Diar al Andalouss, Jasmine Offices 4, Appart N°10, Étage 2",
-          "addressLocality": "Bouskoura",
-          "postalCode": "27182",
-          "addressRegion": "Casablanca-Settat",
-          "addressCountry": "MA"
+      "provider": {
+        "@id": "https://adilhouari.pro/#clinic"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where can I get an allergy test in Bouskoura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dr Adil HOUARI performs prick tests directly at his practice in Bouskoura, with no need to travel to Casablanca. Book an appointment on +212 7 17 17 30 88 ."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which doctor should I see for an allergy in Bouskoura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dr Adil HOUARI, a general practitioner in Bouskoura with expertise in allergology, provides allergy assessment and monitoring for respiratory allergies. He performs prick tests at the practice and refers to a specialist when necessary."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a prick test?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A prick test is a quick skin test: small drops of allergen extracts (pollens, dust mites, cat dander…) are placed on the forearm and the skin is lightly pricked. A local reaction indicates sensitisation to the allergen. Results in 15 to 20 minutes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are prick tests painful?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The procedure is quick and minimally invasive, well tolerated by both adults and children."
         }
       }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Where can I get an allergy test in Bouskoura?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Dr Adil HOUARI performs prick tests (skin allergy tests) directly at his practice in Bouskoura, with no need to travel to Casablanca. Book an appointment on +212 7 17 17 30 88."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which doctor should I see for an allergy in Bouskoura?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Dr Adil HOUARI, a general practitioner in Bouskoura with expertise in allergology, provides allergy assessment and monitoring for respiratory allergies. He performs prick tests at the practice and refers to a specialist when necessary."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is a prick test?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A prick test is a quick skin test: small drops of allergen extracts (pollens, dust mites, cat dander…) are placed on the forearm and the skin is lightly pricked. A local reaction (redness, swelling) indicates sensitisation to the tested allergen. Results are available in 15 to 20 minutes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are prick tests painful?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. The procedure is quick and minimally invasive, well tolerated by both adults and children."
-          }
-        }
-      ]
-    }
-  ]
-  </script>
+    ]
+  }
+]
+</script>
 </head>
 <body class="home-v4 inner-v4 has-mobile-contact">
 

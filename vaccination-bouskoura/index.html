@@ -28,68 +28,76 @@
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://adilhouari.pro/" },
-        { "@type": "ListItem", "position": 2, "name": "Vaccination Bouskoura", "item": "https://adilhouari.pro/vaccination-bouskoura/" }
-      ]
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://adilhouari.pro/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Vaccination Bouskoura",
+        "item": "https://adilhouari.pro/vaccination-bouskoura/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Vaccination à Bouskoura & Ville Verte – Dr Adil HOUARI",
+    "description": "Vaccination pour toute la famille à Bouskoura & Ville Verte selon le calendrier vaccinal recommandé au Maroc.",
+    "url": "https://adilhouari.pro/vaccination-bouskoura/",
+    "inLanguage": "fr",
+    "publisher": {
+      "@id": "https://adilhouari.pro/#clinic"
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
+    "about": {
+      "@type": "Service",
       "name": "Vaccination à Bouskoura & Ville Verte – Dr Adil HOUARI",
-      "description": "Vaccination pour toute la famille à Bouskoura & Ville Verte selon le calendrier vaccinal recommandé au Maroc.",
       "url": "https://adilhouari.pro/vaccination-bouskoura/",
-      "inLanguage": "fr",
-      "author": {
-        "@type": "Physician",
-        "name": "Dr Adil HOUARI",
-        "telephone": "+212717173088",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Diar al Andalouss, Jasmine Offices 4, Appart N°10, Étage 2",
-          "addressLocality": "Bouskoura",
-          "postalCode": "27182",
-          "addressRegion": "Casablanca-Settat",
-          "addressCountry": "MA"
+      "provider": {
+        "@id": "https://adilhouari.pro/#clinic"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Faut-il une ordonnance pour se faire vacciner au cabinet ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non, une ordonnance n'est pas obligatoire pour une consultation vaccination au cabinet. Appelez pour confirmer selon votre situation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Faut-il apporter le carnet de vaccination ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, il est recommandé d'apporter votre carnet de vaccination (ou celui de votre enfant) afin que le médecin puisse vérifier les vaccins déjà reçus et les rappels nécessaires."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les vaccins sont-ils disponibles pour les nourrissons ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, le Dr Adil HOUARI assure la vaccination des nourrissons selon le calendrier vaccinal recommandé au Maroc. Contactez le cabinet pour convenir d'un rendez-vous."
         }
       }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Faut-il une ordonnance pour se faire vacciner au cabinet ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Non, une ordonnance n'est pas obligatoire pour une consultation vaccination au cabinet du Dr Adil HOUARI à Bouskoura. Appelez pour confirmer selon votre situation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Faut-il apporter le carnet de vaccination ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui, il est recommandé d'apporter votre carnet de vaccination (ou celui de votre enfant) afin que le médecin puisse vérifier les vaccins déjà reçus et les rappels nécessaires."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Les vaccins sont-ils disponibles pour les nourrissons à Bouskoura ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui, le Dr Adil HOUARI assure la vaccination des nourrissons selon le calendrier vaccinal recommandé au Maroc. Contactez le cabinet pour convenir d'un rendez-vous."
-          }
-        }
-      ]
-    }
-  ]
-  </script>
+    ]
+  }
+]
+</script>
 </head>
 <body class="home-v4 inner-v4 has-mobile-contact">
 

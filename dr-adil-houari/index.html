@@ -28,46 +28,78 @@
   <link rel="stylesheet" href="../styles.css?v=20261126-v51" />
 
   <!-- JSON-LD: Physician -->
-  <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://adilhouari.pro/" },
-        { "@type": "ListItem", "position": 2, "name": "Dr Adil HOUARI", "item": "https://adilhouari.pro/dr-adil-houari/" }
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Physician",
-      "@id": "https://adilhouari.pro/#physician",
-      "name": "Dr Adil HOUARI",
-      "jobTitle": "Médecin généraliste",
-      "description": "Médecin généraliste installé à Bouskoura & Ville Verte, spécialiste en médecine du sport (CNOM déc. 2025), formation en allergologie à l'Hôpital Necker Paris.",
-      "image": "https://adilhouari.pro/assets/cabinet.jpg",
-      "telephone": "+212717173088",
-      "email": "dradil.houari@gmail.com",
-      "url": "https://adilhouari.pro/dr-adil-houari/",
-      "knowsLanguage": ["fr", "ar"],
-      "alumniOf": [
-        { "@type": "CollegeOrUniversity", "name": "Faculté de Médecine de Casablanca" },
-        { "@type": "CollegeOrUniversity", "name": "Université de Bordeaux" },
-        { "@type": "Hospital", "name": "Hôpital Necker, Paris" },
-        { "@type": "Organization", "name": "FIFA – Fédération Internationale de Football Association" }
-      ],
-      "medicalSpecialty": "https://schema.org/GeneralPractice",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Diar al Andalouss, Jasmine Offices 4, Appart N°10, Étage 2",
-        "addressLocality": "Bouskoura",
-        "postalCode": "27182",
-        "addressRegion": "Casablanca-Settat",
-        "addressCountry": "MA"
+  <script type="application/ld+json">[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://adilhouari.pro/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Dr Adil HOUARI",
+        "item": "https://adilhouari.pro/dr-adil-houari/"
       }
-    }
-  ]
-  </script>
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://adilhouari.pro/#physician",
+    "name": "Dr Adil HOUARI",
+    "jobTitle": "Médecin généraliste et spécialiste en médecine du sport",
+    "url": "https://adilhouari.pro/dr-adil-houari/",
+    "worksFor": {
+      "@id": "https://adilhouari.pro/#clinic"
+    },
+    "knowsLanguage": [
+      "fr",
+      "ar"
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Diplôme de docteur en médecine (Casablanca, 2001)"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Diplôme universitaire de médecine du sport, Université de Bordeaux"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "FIFA Diploma in Football Medicine (2023)"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Formation et stages cliniques en allergologie — Hôpital Necker, Paris (2004)"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Reconnaissance comme spécialiste en médecine du sport — CNOM (décembre 2025)"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Diabetes is Primary CE Certificate Program 2025 — American Diabetes Association"
+      }
+    ],
+    "description": "Médecin généraliste installé à Bouskoura & Ville Verte, spécialiste en médecine du sport (CNOM déc. 2025), formation en allergologie à l'Hôpital Necker Paris.",
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Faculté de Médecine de Casablanca"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Université de Bordeaux"
+      }
+    ]
+  }
+]</script>
 <style>
 .home-v4 .qualification-list{list-style:none;padding:0;margin:0;display:grid;gap:0}
 .home-v4 .qualification-list>li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:12px;align-items:start;padding:16px 0;border-bottom:1px solid #cbd8d0}
