@@ -1125,3 +1125,33 @@ html[dir=rtl] .home-v4.inner-v4 .hero--inner h1,html[dir=rtl] .home-v4.inner-v4 
  .home-v4 .header__inner>.btn{font-size:.82rem;padding:10px 12px;min-height:44px}
 }
 @media(max-width:480px){.home-v4.inner-v4 .hero--inner .hero__cta .btn{flex:1 1 100%}.home-v4.inner-v4 main .card{padding:16px}.home-v4 .header__inner>.btn{max-width:45%;white-space:normal;text-align:center;line-height:1.25}.home-v4 .brand__mark{font-size:1.2rem}}
+
+/* V4.5 — numbered editorial paragraphs; content, heading hierarchy and links unchanged. */
+.home-v4 #services .numbered-grid,.home-v4.inner-v4 main .numbered-grid{
+ display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(28px,4vw,54px);align-items:start;
+}
+.home-v4 #services .numbered-grid>.numbered-item,.home-v4.inner-v4 main .numbered-grid>.numbered-item{
+ position:relative;min-width:0;padding:22px 0 26px;padding-inline-start:44px;border:0;border-bottom:1px solid #cbd8d0;
+ border-radius:0;box-shadow:none;background:transparent;overflow:visible;align-self:stretch;transform:none;
+}
+.home-v4 .numbered-item>.paragraph-number,.home-v4 .numbered-clinical>.paragraph-number{
+ position:absolute;inset-inline-start:0;top:25px;font:400 .9rem/1.5 Georgia,serif;letter-spacing:.015em;color:#526e70;direction:ltr;unicode-bidi:isolate;
+}
+.home-v4 #services .numbered-item h3,.home-v4.inner-v4 main .numbered-item h3{
+ font-size:clamp(1.12rem,1.45vw,1.24rem);font-weight:500;line-height:1.4;letter-spacing:0;margin:0 0 9px;color:var(--ink);
+}
+.home-v4 #services .numbered-item p,.home-v4.inner-v4 main .numbered-item p{font-size:1rem;line-height:1.65;color:var(--muted);margin:0}
+.home-v4 #services .numbered-item p+p,.home-v4.inner-v4 main .numbered-item p+p{margin-top:.65rem}
+.home-v4 #services .numbered-item .list,.home-v4.inner-v4 main .numbered-item .list{margin-block:8px 10px}
+.home-v4 #services .numbered-item .link,.home-v4.inner-v4 main .numbered-item .link{font-weight:500;text-underline-offset:3px;margin-top:8px}
+.home-v4 .numbered-item .service__icon{display:none}
+.home-v4.inner-v4 .clinical-page .numbered-clinical{position:relative;border:0;border-bottom:1px solid #cbd8d0;padding:22px 0 26px;padding-inline-start:44px;margin:0}
+.home-v4.inner-v4 .clinical-page .numbered-clinical h2{font-family:inherit;font-size:clamp(1.18rem,1.7vw,1.4rem);font-weight:500;line-height:1.4;letter-spacing:0;margin:0 0 9px}
+.home-v4.inner-v4 .clinical-page .numbered-clinical p{margin:0;color:var(--muted);line-height:1.65}
+@media(max-width:849px){
+ .home-v4 #services .numbered-grid,.home-v4.inner-v4 main .numbered-grid{grid-template-columns:minmax(0,1fr);max-width:720px}
+}
+@media(max-width:480px){
+ .home-v4 #services .numbered-grid>.numbered-item,.home-v4.inner-v4 main .numbered-grid>.numbered-item,.home-v4.inner-v4 .clinical-page .numbered-clinical{padding-block:20px 24px;padding-inline-start:40px}
+ .home-v4 .numbered-item>.paragraph-number,.home-v4 .numbered-clinical>.paragraph-number{top:23px;font-size:.85rem}
+}
