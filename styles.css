@@ -1430,3 +1430,17 @@ html[dir=rtl] .home-v7 .v7-grid::after{background:linear-gradient(270deg,#0b2e2c
 @media(max-width:360px){
  .home-v7 .v7-mission{font-size:11.6vw;inset-inline:16px}
 }
+
+/* V7.2 — slightly smaller mission typography on mobile only. */
+@media(max-width:900px){
+ .home-v7 .v7-mission{font-size:clamp(2rem,10vw,4.2rem)}
+ .home-v7 .v7-mission span{transform:scaleX(.9);width:111%}
+ html[dir=rtl] .home-v7 .v7-mission{font-size:clamp(1.6rem,7.2vw,3.15rem)}
+ html[dir=rtl] .home-v7 .v7-mission span{transform:none;width:auto}
+}
+@media(min-width:560px) and (max-width:900px){
+ .home-v7 .v7-mission{font-size:clamp(2.6rem,6.8vw,3.5rem)}
+}
+@media(max-width:360px){
+ .home-v7 .v7-mission{font-size:9.9vw}
+}
