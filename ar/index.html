@@ -29,7 +29,7 @@
   <meta property="og:image:height" content="559" />
 
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../styles.css?v=20261126-v62" />
+  <link rel="stylesheet" href="../styles.css?v=20261126-v7" />
   <style>
     /* RTL overrides */
     body { font-family: 'Segoe UI', Tahoma, 'Noto Sans Arabic', Arial, sans-serif; }
@@ -396,13 +396,13 @@
 </script>
 </head>
 
-<body class="home-v4 has-mobile-contact">
+<body class="home-v4 has-mobile-contact home-v7">
   <a class="skip-link" href="#main">الانتقال إلى المحتوى الرئيسي</a>
 
   <header class="header" role="banner">
     <div class="container header__inner">
       <a class="brand" href="#top" aria-label="الصفحة الرئيسية – عيادة الدكتور هواري عادل">
-        <span class="brand__mark" aria-hidden="true"><span>AH</span></span>
+        <span class="brand__mark" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8v10a10 10 0 0 0 20 0V8M8 8c-5 0-5-6 0-6m20 6c5 0 5-6 0-6M18 28v7a10 10 0 0 0 20 0v-5"/><circle cx="38" cy="25" r="5"/></svg></span>
         <span class="brand__text">
           <strong>الدكتور عادل هواري</strong>
           <span>عيادة طبية • بوسكورة وفيل فيرت</span>
@@ -415,8 +415,10 @@
       </button>
 
       <nav id="nav" class="nav" aria-label="التنقل الرئيسي">
-        <a href="#services">الخدمات</a>
-        <a href="#infos">معلومات</a>
+        <a class="v7-nav-home" href="#top" aria-current="page">الرئيسية</a>
+        <a href="/dr-adil-houari/">الدكتور عادل هواري</a>
+        <a href="#services">الاستشارات</a>
+        <a href="#infos">معلومات عملية</a>
         <a href="#faq">الأسئلة الشائعة</a>
         <a href="#contact">اتصل بنا</a>
         <a class="btn btn--primary" href="tel:+212717173088">حجز موعد</a>
@@ -428,30 +430,40 @@
   </header>
 
   <main id="main" tabindex="-1">
-    <section class="hero" id="top">
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <p class="badge">عيادة طبية · بوسكورة · فيل فيرت</p>
-          <div class="hero__identity">
-            <h1 class="name-signature"><span class="name-first">الدكتور عادل</span> <span class="name-last">هواري</span></h1>
-            <img class="hero__portrait" src="/assets/dr-adil-houari-portrait.webp" alt="صورة الدكتور عادل هواري في عيادته الطبية ببوسكورة" width="320" height="300" loading="eager" decoding="async">
-            <p class="hero__credentials specialty-signature"><span class="specialty-item">الطب العام</span> <span class="specialty-item">الطب الرياضي</span> <span class="specialty-item">الحساسية</span></p>
-          </div>
-          <p class="lead hero__intro">أستقبل الرضع والأطفال والبالغين في العيادة للاستشارات الطبية العامة ومتابعة السكري وارتفاع ضغط الدم وإصابات الرياضة وتقييم الحساسية.</p>
-          <p class="hero__bio">دكتور في الطب (الدار البيضاء، 2001)، اختصاصي في طب الرياضة معترف به من المجلس الوطني لهيئة الأطباء سنة 2025، وتكوين في الحساسية بمستشفى نيكر بباريس. <a href="../dr-adil-houari/">المسار المهني والشهادات (بالفرنسية)</a>.</p>
-
-          <div class="hero__cta">
+    <section class="hero v7-hero" id="top">
+  <div class="container v7-grid">
+    <div class="v7-intro">
+      <p class="v7-kicker">عيادة طبية · بوسكورة · فيل فيرت</p>
+      <h1 class="v7-name">الدكتور عادل هواري</h1>
+      <p class="v7-specialties"><span>الطب العام</span> · <span>الطب الرياضي</span> · <span>الحساسية</span></p>
+      <p class="v7-lead">رعاية طبية شاملة ووقائية وشخصية لصحتكم اليومية وعلى المدى الطويل.</p>
+      <div class="hero__cta">
             <a class="btn btn--primary" href="tel:+212717173088"><svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.5 3a2 2 0 0 1-.6 1.8L7.1 10a16 16 0 0 0 6.9 6.9l1.5-1.9a2 2 0 0 1 1.8-.6l3 .5a2 2 0 0 1 1.7 2Z"/></svg>حجز موعد</a>
             <a class="btn btn--ghost" href="#contact"><svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>إرسال رسالة</a>
           </div>
-
-          
-        </div>
-
-        <aside class="hero__card appointment-card" aria-labelledby="appointment-title">
+      <div class="v7-quick">
+        <a class="v7-quick-row" href="tel:+212717173088"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.5 3a2 2 0 0 1-.6 1.8L7.1 10a16 16 0 0 0 6.9 6.9l1.5-1.9a2 2 0 0 1 1.8-.6l3 .5a2 2 0 0 1 1.7 2Z"/></svg><span><small>الهاتف</small><strong dir="ltr">07 17 17 30 88</strong></span></a>
+        <a class="v7-quick-row" href="#appointment-title"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span><small>العنوان</small><strong class="v7-address" dir="ltr">Jasmine Offices 4, Bouskoura</strong></span></a>
+      </div>
+    </div>
+    <div class="v7-visual">
+      <img class="v7-portrait" src="/assets/dr-adil-houari-hero-640.webp" alt="صورة الدكتور عادل هواري" width="640" height="601" fetchpriority="high" decoding="async">
+      <p class="v7-mission"><span>الوقاية</span><span>التشخيص</span><span>العلاج</span><span>المواكبة</span></p>
+    </div>
+  </div>
+</section>
+<section class="v7-strip" aria-label="مجالات الرعاية">
+  <div class="container v7-strip-grid"><a class="v7-special" href="#services"><svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8v10a10 10 0 0 0 20 0V8M8 8c-5 0-5-6 0-6m20 6c5 0 5-6 0-6M18 28v7a10 10 0 0 0 20 0v-5"/><circle cx="38" cy="25" r="5"/></svg><div><h2>الطب العام</h2><p>الوقاية والمتابعة والرعاية الصحية للحالات الشائعة.</p></div></a>
+<a class="v7-special" href="/ar/medecine-du-sport-bouskoura/"><svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="30" cy="6" r="4"/><path d="m13 20 9-8 8 4 6 7 8-3M23 15l-7 13 12 5-4 12M16 28l-5 8-8 7"/></svg><div><h2>الطب الرياضي</h2><p>الصحة والأداء والوقاية من الإصابات.</p></div></a>
+<a class="v7-special" href="/ar/allergologie-bouskoura/"><svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="5"/><path d="M24 4v15m0 10v15M4 24h15m10 0h15M10 10l10 10m8 8 10 10M38 10 28 20M20 28 10 38"/></svg><div><h2>الحساسية</h2><p>تقييم الحساسية ورعايتها.</p></div></a></div>
+</section>
+<section class="section v7-practical">
+  <div class="container v7-practical-grid">
+    <div class="v7-practical-copy"><h2>صحتكم في الحياة اليومية</h2><p class="lead hero__intro">أستقبل الرضع والأطفال والبالغين في العيادة للاستشارات الطبية العامة ومتابعة السكري وارتفاع ضغط الدم وإصابات الرياضة وتقييم الحساسية.</p><p class="hero__bio">دكتور في الطب (الدار البيضاء، 2001)، اختصاصي في طب الرياضة معترف به من المجلس الوطني لهيئة الأطباء سنة 2025، وتكوين في الحساسية بمستشفى نيكر بباريس. <a href="../dr-adil-houari/">المسار المهني والشهادات (بالفرنسية)</a>.</p></div>
+    <aside class="hero__card appointment-card" aria-labelledby="appointment-title">
           <p class="appointment-kicker">معلومات عملية</p>
           <h2 id="appointment-title">موعدكم في العيادة</h2>
-          <figure><img class="card__photo" fetchpriority="high" src="../assets/cabinet.jpg" width="738" height="559" loading="eager" decoding="async" alt="العيادة الطبية · Jasmine Offices 4، بوسكورة" /><figcaption>العيادة الطبية · Jasmine Offices 4، بوسكورة</figcaption></figure>
+          <figure><img class="card__photo" src="../assets/cabinet.jpg" width="738" height="559" loading="lazy" decoding="async" alt="العيادة الطبية · Jasmine Offices 4، بوسكورة" /><figcaption>العيادة الطبية · Jasmine Offices 4، بوسكورة</figcaption></figure>
           <div class="appointment-row">
             <span class="appointment-label">الهاتف</span>
             <a class="appointment-phone" href="tel:+212717173088" dir="ltr">07 17 17 30 88</a>
@@ -476,8 +488,8 @@
           </div>
           <div class="appointment-row"><p class="appointment-note">زيارات منزلية متاحة في <strong>بوسكورة</strong>، <strong>فيل فيرت</strong>، <strong>كازا ضياء</strong>، <strong>فيتوريا</strong> والأحياء المجاورة حسب التوفر.</p></div>
         </aside>
-      </div>
-    </section>
+  </div>
+</section>
 
     <section class="section" id="services" aria-label="الخدمات">
       <div class="container">
