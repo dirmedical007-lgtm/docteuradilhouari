@@ -1,0 +1,30 @@
+name: IndexNow
+on:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      all_urls:
+        description: "Submit all sitemap URLs instead of homepage only"
+        type: boolean
+        default: false
+permissions:
+  contents: read
+  actions: read
+jobs:
+  submit:
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' || github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' && github.event.workflow_run.head_repository.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Submit changed URLs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/indexnow.py
