@@ -907,3 +907,34 @@ html[dir=rtl] .home-v4 .section__head h2{font-family:inherit;letter-spacing:0}
  html[dir=rtl] .home-v4 .fab-wa{right:auto;left:12px;transform:none}
  .home-v4 footer{padding-bottom:76px}
 }
+
+/* V4.1 — exact V3 approved mockup palette, no content/SEO changes. */
+body.home-v4{--ink:#163d42;--dark:#123c42;--paper:#f9f8f4;--accent:#c6dfd1;--bg:var(--paper);--text:var(--ink);--muted:#596a69;--teal:var(--dark);--teal-3:var(--dark);--border:#d8ded8;background:var(--paper)}
+.home-v4 .header{background:var(--paper)}
+.home-v4 .brand__mark{background:transparent;color:var(--ink);border:1px solid #829a99;border-radius:0}
+.home-v4 .btn,.home-v4 .navbtn{border-radius:0}
+.home-v4 .nav .btn--primary,.home-v4 .btn--primary{background:var(--dark);color:#fff}
+.home-v4 .hero{background:var(--dark);color:#fff;border:0}
+.home-v4 .hero__copy h1{color:#fff}
+.home-v4 .hero__copy h1 .hero-location{color:var(--accent)}
+.home-v4 .hero__copy .badge{color:var(--accent)}
+.home-v4 .hero__credentials{color:#fff}
+.home-v4 .hero__copy .lead,.home-v4 .hero__bio{color:#e4eee8}
+.home-v4 .hero__bio a,.home-v4 .hero__copy a:not(.btn){color:var(--accent)}
+.home-v4 .hero__cta .btn--primary{background:var(--paper);color:var(--dark)}
+.home-v4 .hero__cta .btn--ghost{background:transparent;border:1px solid var(--accent);color:#fff}
+.home-v4 .hero__copy .trust{background:var(--paper);color:var(--ink);padding:20px;margin-top:22px}
+.home-v4 .hero__copy .trust li{border-color:var(--border)}
+.home-v4 .hero__copy .trust li:first-child{border-top:0}
+.home-v4 .hero__copy .trust__k,.home-v4 .hero__copy .trust__v,.home-v4 .hero__copy .trust a:not(.btn){color:var(--ink)}
+.home-v4 .clinic-photo{background:var(--paper);padding:clamp(14px,2.5vw,28px)}
+.home-v4 .clinic-photo img{border-radius:0}
+.home-v4 .clinic-photo figcaption{color:var(--ink)}
+.home-v4 .clinic-photo a{color:var(--dark);text-underline-offset:3px}
+.home-v4 .section--alt{background:#e7eee7}
+.home-v4 .section__head h2,.home-v4 .service h3{color:var(--ink)}
+.home-v4 .link,.home-v4 .service a{color:var(--dark)}
+.home-v4 .fab-wa{background:var(--dark);border:1px solid var(--accent)}
+.home-v4 .hero :focus-visible{outline-color:#fff}
+.home-v4 .hero .trust :focus-visible,.home-v4 .hero .clinic-photo :focus-visible{outline-color:var(--dark)}
+@media(max-width:560px){.home-v4 .hero__copy .trust{padding:16px}}
