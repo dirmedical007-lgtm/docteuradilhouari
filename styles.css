@@ -1240,3 +1240,24 @@ html[dir=rtl] .home-v4 .hero__copy .specialty-signature{font-family:inherit;font
  .home-v4 #top .hero__copy{display:block;padding:0}
  .home-v4 #top .appointment-card{max-width:none}
 }
+
+/* V5.4 — more breathing room in the Latin name and specialty typography. */
+html:not([dir=rtl]) .home-v4 .hero__copy h1.name-signature{
+ letter-spacing:.018em;line-height:1.06;margin-bottom:24px;
+}
+html:not([dir=rtl]) .home-v4 .name-signature .name-last{
+ letter-spacing:.022em;line-height:1.06;margin-top:.025em;
+}
+html:not([dir=rtl]) .home-v4 .hero__copy .hero__credentials.specialty-signature{
+ font-family:"Libre Caslon Display",Georgia,serif;
+ font-weight:400;letter-spacing:.018em;line-height:1.4;
+ -webkit-text-stroke:.18px currentColor;
+ row-gap:.3em;
+}
+@media(max-width:560px){
+ html:not([dir=rtl]) .home-v4 .hero__copy h1.name-signature{margin-bottom:22px}
+ html:not([dir=rtl]) .home-v4 .hero__copy .hero__credentials.specialty-signature{gap:7px;line-height:1.35}
+}
+@media(max-width:360px){
+ html:not([dir=rtl]) .home-v4 .hero__copy .hero__credentials.specialty-signature{font-size:1.35rem}
+}
