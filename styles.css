@@ -1261,3 +1261,14 @@ html:not([dir=rtl]) .home-v4 .hero__copy .hero__credentials.specialty-signature{
 @media(max-width:360px){
  html:not([dir=rtl]) .home-v4 .hero__copy .hero__credentials.specialty-signature{font-size:1.35rem}
 }
+
+/* V5.5 — contrast the editorial name with a clear, medium-weight specialty line. */
+html:not([dir=rtl]) .home-v4 .hero__copy .hero__credentials.specialty-signature{
+ font-family:Manrope,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+ font-weight:500;letter-spacing:.012em;line-height:1.4;
+ -webkit-text-stroke:0;
+}
+html:not([dir=rtl]) .home-v4 .specialty-signature .specialty-item{white-space:normal;min-width:0;max-width:100%;overflow-wrap:normal}
+@media(max-width:560px){
+ html:not([dir=rtl]) .home-v4 .hero__copy .hero__credentials.specialty-signature{line-height:1.4;gap:7px}
+}
