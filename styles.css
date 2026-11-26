@@ -1065,3 +1065,63 @@ body.home-v4{--max:1200px;--pad:clamp(16px,4vw,48px);font-size:16px;line-height:
 }
 html[dir=rtl] .home-v4 .hero__copy h1{letter-spacing:0;font-size:clamp(2rem,4vw,3.4rem)}
 @media(max-width:849px){html[dir=rtl] .home-v4 .hero__copy h1{font-size:clamp(1.85rem,7vw,2.8rem)}}
+
+/* V4.4 — consistent editorial identity on every public page. */
+.home-v4 .brand__mark{font:400 1.45rem/1 Georgia,serif;letter-spacing:-.08em;display:grid;place-items:center;flex-shrink:0}
+.home-v4 .brand__mark span{padding-inline-end:.08em}
+.home-v4 .header__inner>.btn{flex-shrink:0}
+.home-v4 .header__inner .brand{flex-shrink:1}
+.home-v4 .footer{background:var(--paper);border-color:var(--border)}
+.home-v4 .footer a{color:var(--ink);text-underline-offset:3px}
+.home-v4 .footer__grid{gap:24px}
+.home-v4 .inner-v4{color:var(--ink)}
+.home-v4.inner-v4 .hero--inner{padding-block:clamp(32px,5vw,66px)}
+.home-v4.inner-v4 .hero--inner .hero__grid{display:block;max-width:none}
+.home-v4.inner-v4 .hero__text{max-width:920px;min-width:0}
+.home-v4.inner-v4 .hero--inner h1{font:400 clamp(2.1rem,4.5vw,3.6rem)/1.12 Georgia,serif;letter-spacing:-.035em;color:#fff;max-width:30ch;margin:0 0 16px;text-wrap:balance}
+.home-v4.inner-v4 .hero--inner .hero__lead,.home-v4.inner-v4 .hero--inner .lead{font-size:clamp(1rem,1.5vw,1.12rem);line-height:1.7;color:#e4eee8;max-width:68ch;margin:0 0 22px}
+.home-v4.inner-v4 .hero--inner .breadcrumb{margin:0 0 22px;gap:8px;font-size:.82rem}
+.home-v4.inner-v4 .hero--inner .breadcrumb a,.home-v4.inner-v4 .hero--inner .breadcrumb li[aria-current=page]{border:0;border-radius:0;background:none;color:var(--accent);padding:0;font-weight:500}
+.home-v4.inner-v4 .hero--inner .breadcrumb a{text-decoration:underline;text-underline-offset:3px}
+.home-v4.inner-v4 .hero--inner .breadcrumb li+li::before{color:var(--accent);margin-inline-end:8px}
+.home-v4.inner-v4 .hero--inner .hero__cta{margin:0;gap:10px}
+.home-v4.inner-v4 .hero--inner .hero__cta .btn{min-height:48px}
+.home-v4.inner-v4 .section>.container{min-width:0}
+.home-v4.inner-v4 main>.section:not(.section--alt)>.container>p,.home-v4.inner-v4 main>.section:not(.section--alt)>.container>ul,.home-v4.inner-v4 main>.section>.container>ol{max-width:78ch}
+.home-v4.inner-v4 main h2:not(.appointment-card h2){font:400 clamp(1.65rem,2.6vw,2.3rem)/1.25 Georgia,serif;color:var(--ink);letter-spacing:-.015em;margin:0 0 16px}
+.home-v4.inner-v4 main h3{font-size:1.1rem;font-weight:650;line-height:1.4;color:var(--ink)}
+.home-v4.inner-v4 main .grid--2{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.home-v4.inner-v4 main .grid--3{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}
+.home-v4.inner-v4 main .card{background:transparent;border:1px solid var(--border);padding:clamp(18px,2.5vw,28px);border-radius:0;box-shadow:none;min-width:0;overflow-wrap:anywhere}
+.home-v4.inner-v4 main .card p+p{margin-top:.75rem}
+.home-v4.inner-v4 main .card p{line-height:1.65}
+.home-v4.inner-v4 main .service__icon{display:none}
+.home-v4.inner-v4 main .callout,.home-v4.inner-v4 main .note,.home-v4.inner-v4 main .warn{border-radius:0;box-shadow:none;background:var(--paper);border:1px solid var(--border)}
+.home-v4.inner-v4 main .hours__row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)}
+.home-v4.inner-v4 main .faq{max-width:850px}
+.home-v4.inner-v4 main .faq__item{overflow:visible}
+.home-v4.inner-v4 main .faq__item summary{padding-inline-end:24px}
+.home-v4.inner-v4 main .faq__item[open] summary{background:transparent;border-bottom:0}
+.home-v4.inner-v4 main .faq__body{line-height:1.7}
+.home-v4.inner-v4 main img{max-width:100%;height:auto}
+.home-v4.inner-v4 main img[style*="box-shadow"]{box-shadow:none!important;border-radius:0!important}
+.home-v4.inner-v4 main .form{max-width:760px}
+.home-v4.inner-v4 main input,.home-v4.inner-v4 main select,.home-v4.inner-v4 main textarea{border-radius:0}
+.home-v4.inner-v4 main .split .btn{min-height:44px}
+.home-v4.inner-v4 .clinical-page{width:min(850px,calc(100% - var(--pad)*2));max-width:850px;padding-block:clamp(32px,5vw,64px)}
+.home-v4.inner-v4 .clinical-page section+section{border-top:1px solid var(--border);padding-top:24px}
+.home-v4.inner-v4 .clinical-page section{margin-bottom:28px}
+.home-v4.inner-v4 .clinical-page p{max-width:74ch}
+.home-v4.inner-v4 .clinical-page address{font-style:normal}
+.home-v4.inner-v4.utility-v4 main>.container{max-width:900px}
+.home-v4.inner-v4.utility-v4 main h1{font:400 clamp(2rem,4vw,3rem)/1.2 Georgia,serif;color:var(--ink);margin-bottom:14px}
+.home-v4.inner-v4.utility-v4 main .card{border:0;padding:0}
+html[dir=rtl] .home-v4.inner-v4 .hero--inner h1,html[dir=rtl] .home-v4.inner-v4 main h2{font-family:inherit;letter-spacing:0}
+@media(max-width:1180px){html[dir=rtl] .home-v4 .nav{flex-direction:column}}
+@media(max-width:760px){
+ .home-v4.inner-v4 main .grid--2,.home-v4.inner-v4 main .grid--3{grid-template-columns:minmax(0,1fr);gap:16px}
+ .home-v4.inner-v4 .hero--inner h1{font-size:clamp(2rem,7vw,2.75rem);max-width:100%;text-wrap:initial}
+ .home-v4.inner-v4 .hero--inner .breadcrumb{margin-bottom:16px}
+ .home-v4 .header__inner>.btn{font-size:.82rem;padding:10px 12px;min-height:44px}
+}
+@media(max-width:480px){.home-v4.inner-v4 .hero--inner .hero__cta .btn{flex:1 1 100%}.home-v4.inner-v4 main .card{padding:16px}.home-v4 .header__inner>.btn{max-width:45%;white-space:normal;text-align:center;line-height:1.25}.home-v4 .brand__mark{font-size:1.2rem}}
