@@ -1189,3 +1189,22 @@ html:not([dir=rtl]) .home-v4 .hero__copy h1.name-signature{font-family:"Libre Ca
 html[dir=rtl] .home-v4 .name-signature .name-last{font-size:1.17em;line-height:1.2}
 @media(max-width:849px){html:not([dir=rtl]) .home-v4 .hero__copy h1.name-signature{font-size:clamp(2.8rem,7.2vw,4.2rem)}}
 @media(max-width:480px){html:not([dir=rtl]) .home-v4 .hero__copy h1.name-signature{font-size:clamp(2.5rem,10.2vw,3.35rem);margin-bottom:17px}}
+
+/* V5.2 — specialty line: a refined, more prominent editorial subtitle. */
+.home-v4 .hero__copy .hero__credentials.specialty-signature{
+ display:flex;flex-wrap:wrap;align-items:baseline;column-gap:.45em;row-gap:.22em;
+ font-size:clamp(1.35rem,2.1vw,1.75rem);font-weight:400;line-height:1.3;
+ color:#f9f8f4;letter-spacing:.005em;margin:0 0 25px;max-width:100%;
+}
+html:not([dir=rtl]) .home-v4 .hero__copy .specialty-signature{font-family:"Libre Caslon Display",Georgia,serif}
+.home-v4 .specialty-signature .specialty-item{display:inline-flex;align-items:baseline;gap:.45em;white-space:nowrap}
+.home-v4 .specialty-signature .specialty-item+.specialty-item::before{content:"·";color:#c6dfd1}
+html[dir=rtl] .home-v4 .hero__copy .specialty-signature{font-family:inherit;font-size:clamp(1.15rem,1.8vw,1.5rem);font-weight:500;letter-spacing:0}
+@media(max-width:849px){
+ .home-v4 .hero__copy .hero__credentials.specialty-signature{font-size:clamp(1.4rem,3.4vw,1.7rem)}
+}
+@media(max-width:560px){
+ .home-v4 .hero__copy .hero__credentials.specialty-signature{flex-direction:column;align-items:flex-start;gap:5px;font-size:clamp(1.4rem,5vw,1.6rem);line-height:1.25;margin-bottom:22px}
+ .home-v4 .specialty-signature .specialty-item+.specialty-item::before{content:none}
+ html[dir=rtl] .home-v4 .hero__copy .specialty-signature{font-size:1.25rem;line-height:1.5}
+}
