@@ -1444,3 +1444,42 @@ html[dir=rtl] .home-v7 .v7-grid::after{background:linear-gradient(270deg,#0b2e2c
 @media(max-width:360px){
  .home-v7 .v7-mission{font-size:9.9vw}
 }
+
+/* V7.3 — desktop refinement; mobile V7.2 is unchanged. */
+@media(min-width:901px){
+ .home-v7 .v7-grid{min-height:clamp(560px,43vw,670px);padding-block:40px}
+ .home-v7 .v7-mission{font-family:Impact,"Arial Narrow",Manrope,sans-serif;font-weight:400;font-size:clamp(1.75rem,2.65vw,2.9rem);line-height:1.12;letter-spacing:0;text-shadow:none;margin-top:clamp(40px,6vw,88px)}
+ .home-v7 .v7-mission span{transform:none;width:auto}
+ html[dir=rtl] .home-v7 .v7-mission{font-family:inherit;font-weight:700;font-size:clamp(1.5rem,2.5vw,2.6rem);line-height:1.4}
+ .home-v7 .v7-practical{padding-block:clamp(36px,4vw,60px)}
+ .home-v7 .v7-practical-grid{width:min(1200px,calc(100% - clamp(24px,4vw,56px)*2));max-width:none;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);align-items:start;gap:clamp(28px,4vw,54px)}
+ .home-v7 .v7-practical-copy{padding-block:16px;max-width:58ch}
+ .home-v7 .v7-practical-copy h2{margin-bottom:20px}
+ .home-v7 .v7-practical-copy .lead{margin:0 0 18px;font-size:clamp(1rem,1.3vw,1.1rem)}
+ .home-v7 .v7-practical-copy .hero__bio{margin:0;font-size:.95rem}
+ .home-v7 .v7-practical .appointment-card{padding:clamp(20px,2.3vw,28px);border-radius:8px}
+ .home-v7 .v7-practical .appointment-card h2{margin:0 0 14px}
+ .home-v7 .v7-practical .appointment-card figure{margin:0 0 12px}
+ .home-v7 .v7-practical .appointment-card figcaption{font-size:.72rem;line-height:1.45}
+ .home-v7 .v7-practical .appointment-card .card__photo{max-height:156px;object-fit:contain;border:0}
+ .home-v7 .v7-practical .appointment-row{padding-block:10px}
+ .home-v7 .v7-practical .appointment-row:last-child{padding-bottom:0}
+ .home-v7 .v7-practical .appointment-row:has(.qr){grid-template-rows:auto auto auto;align-items:start;align-content:start;gap:5px 12px}
+ .home-v7 .v7-practical .appointment-row:has(.qr)>a{align-self:start}
+ .home-v7 .v7-practical .appointment-hours{gap:3px 12px}
+ .home-v7 .v7-practical .appointment-note{font-size:.8rem;line-height:1.5}
+}
+@media(min-width:1150px){
+ .home-v7 .v7-practical .appointment-card{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);column-gap:18px;align-items:start}
+ .home-v7 .v7-practical .appointment-card>.appointment-kicker,.home-v7 .v7-practical .appointment-card>h2,.home-v7 .v7-practical .appointment-card>.appointment-row{grid-column:1/-1}
+ .home-v7 .v7-practical .appointment-card>figure{grid-column:1;min-width:0}
+ .home-v7 .v7-practical .appointment-card>.appointment-row:has(.appointment-phone){grid-column:2;align-self:center;border-top:0;border-inline-start:1px solid var(--border);padding:8px 0;padding-inline-start:14px}
+ .home-v7 .v7-practical .appointment-card .appointment-phone{font-size:clamp(1.1rem,1.5vw,1.35rem);white-space:nowrap}
+ .home-v7 .v7-practical .appointment-card .appointment-secondary{white-space:nowrap}
+}
+@media(min-width:1281px) and (max-width:1450px){
+ .home-v7 .header .navbtn{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}
+ .home-v7 .header .nav{display:none;position:absolute;top:100%;inset-inline:var(--pad);background:#0d302f;border:1px solid #c6dfd155;border-radius:10px;padding:12px;max-height:calc(100dvh - 85px);overflow-y:auto;flex-direction:column;align-items:stretch}
+ .home-v7 .header .nav.is-open{display:flex}
+ .home-v7 .header .nav a{display:block;white-space:normal;padding:12px;min-height:44px}
+}
